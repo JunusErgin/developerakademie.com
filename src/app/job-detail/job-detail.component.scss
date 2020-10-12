@@ -1,0 +1,26 @@
+.job-detail {
+  display: flex;
+
+  h2 {
+      padding-bottom: 0;
+  }
+
+}
+
+.job-left {
+  width: 70%;
+}
+
+.job-right {
+  width: 30%;
+  padding-left: 64px;
+
+  button {
+      width: 100%;
+      margin-bottom: 32px;
+  }
+
+  iframe {
+      width: 100%;
+  }
+}

@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { AtfComponent } from './atf/atf.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { JobDescriptionComponent } from './job-description/job-description.component';
+import { JobDetailComponent } from './job-detail/job-detail.component';
+import { JobsLandingComponent } from './jobs-landing/jobs-landing.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { JobDescriptionComponent } from './job-description/job-description.compo
     HeaderComponent,
     AtfComponent,
     JobsComponent,
-    JobDescriptionComponent
+    JobDescriptionComponent,
+    JobDetailComponent,
+    JobsLandingComponent
   ],
   imports: [
     BrowserModule,
