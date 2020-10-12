@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { AtfComponent } from './atf/atf.component';
+import { JobsComponent } from './jobs/jobs.component';
+import { JobDescriptionComponent } from './job-description/job-description.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    AtfComponent
+    AtfComponent,
+    JobsComponent,
+    JobDescriptionComponent
   ],
   imports: [
     BrowserModule,
