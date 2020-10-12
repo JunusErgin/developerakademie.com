@@ -1,0 +1,15 @@
+.atf {
+  position: relative;
+  display: block;
+
+  img {
+    position: absolute;
+    right: 80px;
+    top: 30px;
+    width: 40vw;
+  }
+
+  p {
+    max-width: 40%;
+  }
+}

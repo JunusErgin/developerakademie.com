@@ -1,1 +1,74 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  color: #4d4c4c;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+header img {
+  width: 200px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  margin-left: 32px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.padding-left-right {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+
+.btn-outline {
+  border: 2px solid #fd7065;
+  border-radius: 4px;
+  padding: 8px;
+  color: #fd7065;
+  text-decoration: none;
+}
+
+.text-red {
+  color: #fd7065;
+}
+
+.atf {
+  display: table;
+}
+
+.atf div {
+  width: 50%;
+}
+
+
+/* Neu */
+h1 {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 38px;
+  color: #0b0707;
+}
+
+.subtitle {
+  font-size: 22px;
+}
+
+.bg-gray {
+  background-color: #e0e0e0;
+}
