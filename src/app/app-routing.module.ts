@@ -12,6 +12,9 @@ const routes: Routes = [{
   path: ''
 }, {
   component: JobsLandingComponent,
+  path: 'karriere'
+}, {
+  redirectTo: '/',
   path: '**'
 }];
 

@@ -17,10 +17,10 @@ export class JobService {
     {
       "category": "Engineering",
       "title": "Junior Web Development Coach",
-      "description": "In diesem Job Coachst du unsere Studenten in einfach Themen wie HTML, CSS und den basics in JavaScript.",
-      "requirements": ["Du sprichst Deutsch als Muttersprache", "Du hast sehr gute Kenntnisse in HTML, CSS und kennst du Basics in JavaScript.", "Du hast Spaß daran, motivierte Programmieranfänger zu coachen"],
+      "description": "Wir suchen noch einen motivierten Werkstudenten mit Programmiererfahrung zur punktuellen Unterstützung für unser Coaching-Team beim Online-Support unserer Kunden & Studenten.",
+      "requirements": ["Du sprichst Deutsch mindestens auf C1-Niveau", "Du kannst gut erklären und hast Spaß daran", "Du hast sehr gute Kenntnisse in HTML, CSS und kannst JavaScript", "Begriffe wie \"Flexbox\" und \"Position: absolute\" sind für dich keine Fremdwörter", "Du willst einen Startup-Alltag kennenlernen und dich auch als Programmierer weiterentwickeln", "Du hast Freude daran, Menschen eine tolle zweite Karriere zu ermöglichen"],
       "optional_requirements": [],
-      "normal_day": ["Du coachst Programmieranfänger", "Du betreust Software-Projekte von kleinen Gruppen", "Du hilfst dabei, Fragen in unserem Support-Chat zu beantworten"],
+      "normal_day": ["Du bringst Programmieranfängern online über Video-Calls programmieren bei und verbesserst mit Ihnen zusammen ihre Hausaufgaben", "Du betreust Software-Projekte von kleinen Gruppen", "Du hilfst dabei, Fragen in unserem Support-Chat zu beantworten", "Du denkst dir eigene kleine Projekte aus, die unsere Lehre noch weiter verbessern"],
       "fulltime": "Werkstudent / Teilzeit"
     },
     {
@@ -50,6 +50,6 @@ export class JobService {
   }
 
   public findByTitle(title) {
-    return this.jobs.find(job => job.title == job.title);
+    return this.jobs.find(job => job.title == title);
   }
 }

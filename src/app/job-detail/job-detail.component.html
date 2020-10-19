@@ -6,6 +6,9 @@
 
   <div class="job-detail">
     <div class="job-left">
+      <p>
+        Die Developer Akademie ist eine <b>Online-Programmierakademie</b>, die Quereinsteiger binnen 6 Monaten zu <b>gefragten Programmierern</b> ausbildet. Wir betreuen unsere Kunden von der ersten Zeile Code bis zum Einstieg <b>in den ersten IT-Job</b>. Als Startup suchen wir nach motivierten Menschen, die uns dabei helfen unsere Mission zu erfüllen.      </p>
+      
       <p>{{ job['description'] }}</p>
 
       <h2>Das solltest du mitbringen</h2>
@@ -14,7 +17,7 @@
       </ul>
 
 
-      <h2>Optional</h2>
+      <h2 *ngIf="job['optional_requirements'].length > 0">Optional</h2>
       <ul *ngIf="job['optional_requirements']">
         <li *ngFor="let req of job.optional_requirements">{{ req }}</li>
       </ul>
