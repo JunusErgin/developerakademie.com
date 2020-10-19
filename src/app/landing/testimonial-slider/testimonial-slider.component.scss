@@ -1,0 +1,46 @@
+:host {
+  height: 300px;
+  /* min-width: calc(100% - 64px);*/
+  width: 100%;
+  background-color: white;
+  display: flex;
+  overflow-x: hidden;
+
+
+  div {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    background-color: 0;
+  }
+
+  p {
+    width: 40%;
+    margin-top: 64px;
+    margin-left: 64px;
+  }
+
+  b {
+    margin-top: auto;
+    margin-left: 64px;
+    margin-bottom: 64px;
+  }
+}
+
+.testimonial-picture {
+  position: absolute;
+  width: 265px;
+  object-position: -90px 0px;
+  filter: contrast(1.25);
+
+  object-fit: cover;
+  height: 100%;
+  right: 0;
+  border-bottom-left-radius: 100%;
+  border-top-left-radius: 100%;
+
+}

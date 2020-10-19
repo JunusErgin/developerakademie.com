@@ -1,0 +1,38 @@
+.study-element {
+  border-radius: 4px;
+  background-color: white;
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px;
+  font-weight: 600;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.study-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 64px;
+  justify-content: center;
+}
+
+.study-section-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 32px;
+}
+
+
+
+
+.columns-2 {
+    display: flex;
+    justify-content: space-between;
+    
+  div {
+    width: 50%;
+  }
+}

@@ -1,0 +1,31 @@
+.number {
+    border-radius: 100%;
+    background-color: #fd7065;
+    padding: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    height: 0;
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+.process-explaination {
+    display: flex;
+  
+    div {
+      margin-left: 32px;
+  
+      span {
+        font-size: 24px;
+        font-weight: 600;
+      }
+  
+      p {
+          font-size: 12px;
+      }
+    }
+  }
+  

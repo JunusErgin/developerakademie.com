@@ -10,6 +10,10 @@ import { JobDescriptionComponent } from './job-description/job-description.compo
 import { JobDetailComponent } from './job-detail/job-detail.component';
 import { JobsLandingComponent } from './jobs-landing/jobs-landing.component';
 import { FooterComponent } from './footer/footer.component';
+import { SectionComponent } from './section/section.component';
+import { LandingComponent } from './landing/landing.component';
+import { ProcessStepComponent } from './landing/process-step/process-step.component';
+import { TestimonialSliderComponent } from './landing/testimonial-slider/testimonial-slider.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { FooterComponent } from './footer/footer.component';
     JobDescriptionComponent,
     JobDetailComponent,
     JobsLandingComponent,
-    FooterComponent
+    FooterComponent,
+    SectionComponent,
+    LandingComponent,
+    ProcessStepComponent,
+    TestimonialSliderComponent
   ],
   imports: [
     BrowserModule,
