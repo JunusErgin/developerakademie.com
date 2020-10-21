@@ -1,20 +1,19 @@
 <div class="testimonial-container">
+  <div class="testimonial-slide" *ngFor="let t of testimonials; let i = Index;" [style.transform]="'translateX(' + (0 - 100*currentImage) + '%)'">
     <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, ea quidem quos dolor minima corporis cumque placeat magnam? Asperiores iure quo harum aspernatur fuga consequatur quaerat quam animi a officia!
+      {{ t.text }}
     </p>
 
-    <b>David K.</b>
+    <b>{{ t.name }}</b>
 
-    <img class="testimonial-picture" src="./assets/img/testimonials/david.jpg">
+    <img class="testimonial-picture" src="./assets/img/testimonials/{{ t.image }}.jpg">
+  </div>
 </div>
 
+<div class="testimonial-switch-button testimonial-button-left" (click)="lastImage()">
+  <img src="./assets/icons/arrow_right.png">
+</div>
 
-<div class="testimonial-container">
-    <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, ea quidem quos dolor minima corporis cumque placeat magnam? Asperiores iure quo harum aspernatur fuga consequatur quaerat quam animi a officia!
-    </p>
-
-    <b>Vincent E.</b>
-
-    <img class="testimonial-picture" src="./assets/img/testimonials/david.jpg">
+<div class="testimonial-switch-button testimonial-button-right" (click)="nextImage()">
+  <img src="./assets/icons/arrow_right.png">
 </div>

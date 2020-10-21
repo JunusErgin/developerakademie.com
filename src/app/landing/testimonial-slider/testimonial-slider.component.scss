@@ -1,13 +1,21 @@
 :host {
+  position: relative;
   height: 300px;
-  /* min-width: calc(100% - 64px);*/
+  width: 100%;
+  display: flex;
+}
+
+.testimonial-container {
+  height: 300px;
   width: 100%;
   background-color: white;
   display: flex;
   overflow-x: hidden;
+  position: relative;
 
 
-  div {
+  .testimonial-slide {
+    transition: all 225ms ease-in-out;
     height: 300px;
     position: relative;
     overflow: hidden;
@@ -22,6 +30,7 @@
     width: 40%;
     margin-top: 64px;
     margin-left: 64px;
+    font-size: 12px;
   }
 
   b {
@@ -43,4 +52,38 @@
   border-bottom-left-radius: 100%;
   border-top-left-radius: 100%;
 
+}
+
+
+.testimonial-switch-button {
+  height: 48px;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #fd7065;
+  border-radius: 100%;
+  position: absolute;
+  cursor: pointer;
+  top: calc(150px - 48px/2);
+  border: 1px solid white;
+
+  &:hover {
+    background-color: #fc867e;
+  }
+
+  img {
+    width: 40%;
+  }
+}
+
+.testimonial-button-left {
+  left: -24px;
+  transform: rotate(180deg);
+}
+
+
+.testimonial-button-right {
+  right: -24px;
 }

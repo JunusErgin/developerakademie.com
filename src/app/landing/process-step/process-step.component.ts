@@ -1,11 +1,11 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-process-step',
   templateUrl: './process-step.component.html',
   styleUrls: ['./process-step.component.scss']
 })
-export class ProcessStepComponent implements OnInit {
+export class ProcessStepComponent implements OnInit, OnDestroy {
   @Input() headline = '';
   static count: number = 0;
   instanceNumber = 0;
@@ -16,6 +16,10 @@ export class ProcessStepComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  ngOnDestroy() {
+    --ProcessStepComponent.count;
   }
 
 }
