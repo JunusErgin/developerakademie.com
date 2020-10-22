@@ -14,6 +14,7 @@ import { SectionComponent } from './section/section.component';
 import { LandingComponent } from './landing/landing.component';
 import { ProcessStepComponent } from './landing/process-step/process-step.component';
 import { TestimonialSliderComponent } from './landing/testimonial-slider/testimonial-slider.component';
+import { CheckmarkComponent } from './utils/checkmark/checkmark.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { TestimonialSliderComponent } from './landing/testimonial-slider/testimo
     SectionComponent,
     LandingComponent,
     ProcessStepComponent,
-    TestimonialSliderComponent
+    TestimonialSliderComponent,
+    CheckmarkComponent
   ],
   imports: [
     BrowserModule,

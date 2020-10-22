@@ -1,14 +1,14 @@
 <app-section [graybg]="true" headline="Was lernst du?">
   <div class="study-section">
-    <div class="study-element"><img src="./assets/icons/">HTML</div>
-    <div class="study-element"><img src="./assets/icons/">CSS</div>
-    <div class="study-element"><img src="./assets/icons/">JavaScript</div>
-    <div class="study-element"><img src="./assets/icons/">Angular</div>
-    <div class="study-element"><img src="./assets/icons/">Git</div>
-    <div class="study-element"><img src="./assets/icons/">SCRUM</div>
-    <div class="study-element"><img src="./assets/icons/">Apps</div>
-    <div class="study-element"><img src="./assets/icons/">Business Software</div>
-    <div class="study-element"><img src="./assets/icons/">IT Job finden</div>
+    <div class="study-element"><img src="./assets/icons/html.png">HTML</div>
+    <div class="study-element"><img src="./assets/icons/css.png">CSS</div>
+    <div class="study-element"><img src="./assets/icons/js.png">JavaScript</div>
+    <div class="study-element"><img src="./assets/icons/angular.png">Angular</div>
+    <div class="study-element"><img src="./assets/icons/git.png">Git</div>
+    <div class="study-element"><img src="./assets/icons/scrum.png">SCRUM</div>
+    <div class="study-element"><img src="./assets/icons/app.png">Apps</div>
+    <div class="study-element"><img src="./assets/icons/business.png">Business Software</div>
+    <div class="study-element"><img src="./assets/icons/job.png">IT Job finden</div>
 
   </div>
 
@@ -72,4 +72,29 @@
 
 <app-section [graybg]="true" headline="" [padding]="true">
   <app-testimonial-slider></app-testimonial-slider>
+</app-section>
+
+
+<app-section [alignLeft]="true" headline="Deine Online-Coaches sind immer für dich da" [padding]="true">
+  <div class="columns-2">
+    <div>
+      <p class="text-gray">Egal ob du noch nie eine Zeile Code geschrieben hast, oder schon Programmiererfahrung hast:
+        wir bringen dich zu deinem ersten Programmierer-Job.</p>
+    </div>
+  </div>
+
+  <div class="columns-2">
+    <div class="v-center">
+      <ul>
+        <li><app-checkmark>Lerne von überall aus</app-checkmark></li>
+        <li><app-checkmark>Persönliche Ansprechpartner für alle Fragen</app-checkmark></li>
+        <li><app-checkmark>Lerne Praxisbezogen</app-checkmark></li>
+        <li><app-checkmark>Profitiere von einer Mischung aus 1:1 Coachings & Gruppenarbeiten</app-checkmark></li>
+        <li><app-checkmark>Systematische Vorbereitung auf den Arbeitsmarkt</app-checkmark></li>
+      </ul>
+    </div>
+    <div class="columns-2-image-container">
+      <img src="./assets/img/coach.png">
+    </div>
+  </div>
 </app-section>

@@ -30,6 +30,21 @@ nav a:hover {
   text-decoration: underline;
 }
 
+ul {
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+li {
+  margin-bottom: 16px;
+  color: rgb(89, 95, 104);
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
 .padding-left-right {
   padding-left: 100px;
   padding-right: 100px;
@@ -52,6 +67,10 @@ nav a:hover {
 
 .text-red {
   color: #fd7065;
+}
+
+.text-gray {
+  color: rgb(89, 95, 104);
 }
 
 .atf {
@@ -100,4 +119,14 @@ h3 {
 .padding-bottom-top {
   padding-bottom: 32px !important;
   padding-top: 32px !important;
+}
+
+
+.roboto-medium {
+  font-family: 'Roboto', sans-serif;
+}
+
+.v-center {
+  display: flex;
+  align-items: center;
 }

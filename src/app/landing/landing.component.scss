@@ -41,5 +41,15 @@
 
   div {
     width: 50%;
+    }
+
+  img {
+    max-width: 80%;
   }
+}
+
+.columns-2-image-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }

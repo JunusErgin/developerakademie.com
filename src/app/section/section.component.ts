@@ -10,6 +10,7 @@ export class SectionComponent implements OnInit {
   @Input() graybg = false;
   @Input() headline = '';
   @Input() padding = false;
+  @Input() alignLeft = false;
 
   constructor() { }
 
