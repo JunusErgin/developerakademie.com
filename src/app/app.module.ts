@@ -16,6 +16,7 @@ import { ProcessStepComponent } from './landing/process-step/process-step.compon
 import { TestimonialSliderComponent } from './landing/testimonial-slider/testimonial-slider.component';
 import { CheckmarkComponent } from './utils/checkmark/checkmark.component';
 import { CardComponent } from './utils/card/card.component';
+import { StatisticsComponent } from './landing/statistics/statistics.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CardComponent } from './utils/card/card.component';
     ProcessStepComponent,
     TestimonialSliderComponent,
     CheckmarkComponent,
-    CardComponent
+    CardComponent,
+    StatisticsComponent
   ],
   imports: [
     BrowserModule,
