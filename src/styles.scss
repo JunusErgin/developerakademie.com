@@ -130,3 +130,16 @@ h3 {
   display: flex;
   align-items: center;
 }
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+@media(max-width: 850px) {
+  .space-between {
+    flex-direction: column;
+    align-items: center;
+  }
+}
