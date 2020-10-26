@@ -1,0 +1,17 @@
+:host {
+    min-height: 200px;
+    display: flex;
+    background-size: cover;
+    background-image: url("./../../assets/img/CTA_yellow.png");
+
+    .columns-2 {
+        display: flex;
+        align-items: center;
+        padding-top: 100px;
+    }
+}
+
+.flex-end{
+    display: flex;
+    justify-content: flex-end;
+}

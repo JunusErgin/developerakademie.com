@@ -17,6 +17,7 @@ import { TestimonialSliderComponent } from './landing/testimonial-slider/testimo
 import { CheckmarkComponent } from './utils/checkmark/checkmark.component';
 import { CardComponent } from './utils/card/card.component';
 import { StatisticsComponent } from './landing/statistics/statistics.component';
+import { PreFooterComponent } from './pre-footer/pre-footer.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { StatisticsComponent } from './landing/statistics/statistics.component';
     TestimonialSliderComponent,
     CheckmarkComponent,
     CardComponent,
-    StatisticsComponent
+    StatisticsComponent,
+    PreFooterComponent
   ],
   imports: [
     BrowserModule,

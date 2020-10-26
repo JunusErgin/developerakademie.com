@@ -5,7 +5,8 @@ html {
 body {
   margin: 0;
   font-family: "Open Sans", Helvetica, sans-serif;
-  color: #4d4c4c;
+  //color: #4d4c4c;
+  color: black;
 }
 
 header {
@@ -17,6 +18,10 @@ header {
 
 header img {
   width: 200px;
+} 
+
+a {
+  text-decoration: none !important;
 }
 
 nav a {
@@ -46,18 +51,36 @@ li {
 }
 
 .padding-left-right {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 280px;
+  padding-right: 280px;
 }
+
+.btn {
+  background-color: #fd7065;
+  padding: 12px 32px;
+  border-radius: 6px;
+  color: white !important;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.btn:hover {
+  background-color: #fc8880;
+}
+
 
 
 .btn-outline {
   border: 2px solid #fd7065;
   border-radius: 4px;
-  padding: 8px;
+  padding: 8px 16px;
   color: #fd7065;
   text-decoration: none;
   cursor: pointer;
+  font-weight: bold;
 
   &:hover {
     background-color: rgba(#fd7065, 0.1);
@@ -142,7 +165,7 @@ h3 {
 
   div {
     width: 50%;
-    }
+  }
 
   img {
     max-width: 80%;
@@ -151,6 +174,40 @@ h3 {
 
 .line-height-32 {
   line-height: 32px;
+}
+
+.highlight-red {
+  color: white;
+  background-color: #fd7065;
+}
+
+@media(max-width: 1800px) {
+  .padding-left-right {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+
+@media(max-width: 1600px) {
+  .padding-left-right {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
+@media(max-width: 1400px) {
+  .padding-left-right {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+
+@media(max-width: 850px) {
+  .padding-left-right {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 

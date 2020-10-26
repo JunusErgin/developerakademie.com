@@ -10,5 +10,11 @@
     justify-content: space-between;
     align-items: center;
     z-index: 5;
+
+    nav {
+      display: flex;
+      align-items: center;
+    }
+
   }
 }
