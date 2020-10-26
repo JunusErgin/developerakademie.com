@@ -136,6 +136,23 @@ h3 {
   justify-content: space-between;
 }
 
+.columns-2 {
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    width: 50%;
+    }
+
+  img {
+    max-width: 80%;
+  }
+}
+
+.line-height-32 {
+  line-height: 32px;
+}
+
 
 @media(max-width: 850px) {
   .space-between {

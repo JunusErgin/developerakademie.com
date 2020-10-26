@@ -6,7 +6,7 @@
 
     <b>{{ t.name }}</b>
 
-    <img class="testimonial-picture" src="./assets/img/testimonials/{{ t.image }}.jpg">
+    <img [style]="'object-position: ' + t.offset + ' 0px;'" class="testimonial-picture" src="./assets/img/testimonials/{{ t.image }}.jpg">
   </div>
 </div>
 

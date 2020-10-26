@@ -1,5 +1,32 @@
 <div class="switch-section">
-    <div>Nationalität</div>
-    <div>Stadt</div>
-    <div>Background</div>
+  <div (click)="select(0)" [class.color-white]="selected == 0">Nationalität</div>
+  <div (click)="select(1)" [class.color-white]="selected == 1">Stadt</div>
+  <div (click)="select(2)" [class.color-white]="selected == 2">Background</div>
+  <div class="switch-selector" [style.left]="(selectorWidth * selected) + 'px'"></div>
+</div>
+
+<div class="switch-slides">
+  <div class="switch-slide" [style.transform]="'translateX(' + (0 - selected * 100) + '%)'">
+    <img src="./assets/img/worldmap.png">
+  </div>
+  <div class="switch-slide" [style.transform]="'translateX(' + (0 - selected * 100) + '%)'">
+    <img src="./assets/img/AUT_DE.png">
+  </div>
+
+
+  <div class="switch-slide" [style.transform]="'translateX(' + (0 - selected * 100) + '%)'">
+    <div class="columns-2 background-container">
+      <div class="line-height-32">
+        <b>Alter:</b><br>
+        18 - 25: <span class="switch-highlight">29%</span> <br>
+        25 - 35: <span class="switch-highlight">48%</span> <br>
+        35 - 50: <span class="switch-highlight">23%</span> <br>
+
+    </div>
+      <div>
+          <img src="./assets/img/pie_chart.png">
+      </div>
+
+    </div>
+  </div>
 </div>
