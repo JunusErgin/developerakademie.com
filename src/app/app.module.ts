@@ -18,6 +18,8 @@ import { CheckmarkComponent } from './utils/checkmark/checkmark.component';
 import { CardComponent } from './utils/card/card.component';
 import { StatisticsComponent } from './landing/statistics/statistics.component';
 import { PreFooterComponent } from './pre-footer/pre-footer.component';
+import { SecondRowComponent } from './landing/second-row/second-row.component';
+import { DatenschutzComponent } from './legal/datenschutz/datenschutz.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { PreFooterComponent } from './pre-footer/pre-footer.component';
     CheckmarkComponent,
     CardComponent,
     StatisticsComponent,
-    PreFooterComponent
+    PreFooterComponent,
+    SecondRowComponent,
+    DatenschutzComponent
   ],
   imports: [
     BrowserModule,

@@ -30,7 +30,11 @@
     width: 40%;
     margin-top: 64px;
     margin-left: 64px;
-    font-size: 12px;
+    font-size: 14px;
+
+    @media (min-width: 1200px) {
+      width: 60%;  
+    }
   }
 
   b {

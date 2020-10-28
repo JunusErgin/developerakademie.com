@@ -3,17 +3,32 @@
     <div>
       <h1>Professionelle Online-<br>
         Weiterbildungen für die <span class="highlight-red">IT-Branche</span></h1>
-        <p>
-          Flexible und intensive Online-Weiterbildungen im Bereich IT & Programmieren für Quereinsteiger und IT-Fachkräfte.
-        </p>
+      <p>
+        Flexible und intensive Online-Weiterbildungen im Bereich IT & Programmieren für Quereinsteiger und IT-Fachkräfte
+        - Made in Germany. Enge Betreuung durch erfahrene Coaches und Programmierer. Von der ersten Zeile Code. Bis zum
+        ersten Job als Programmierer.
+      </p>
 
-        <a class="btn-outline" target="blank" href="https://weiterbildung.developerakademie.com">Weiterbildung Web-Programmierer</a>
+
+      <!-- TrustBox widget - Starter -->
+      <div class="trustpilot-widget" data-locale="de-DE" data-template-id="5613c9cde69ddc09340c6beb"
+        data-businessunit-id="5e9825574f392a0001029067" data-style-height="100%" data-style-width="100%"
+        data-theme="dark">
+        <a href="https://de.trustpilot.com/review/developerakademie.com" target="_blank" rel="noopener">Trustpilot</a>
+      </div>
+      <!-- End TrustBox widget -->
+
+
+
+      <a class="btn-outline" target="blank" href="https://weiterbildung.developerakademie.com">Weiterbildung
+        Web-Programmierer</a>
     </div>
     <img src="./assets/img/team1.png">
   </div>
 </app-section>
 
-<app-section [graybg]="true" headline="Was lernst du?">
+<app-second-row></app-second-row>
+<app-section [graybg]="true" headline="Dein Lehrplan">
   <div class="study-section">
     <div class="study-element"><img src="./assets/icons/html.png">HTML</div>
     <div class="study-element"><img src="./assets/icons/css.png">CSS</div>
@@ -28,7 +43,7 @@
   </div>
 
   <div class="study-section-button">
-    <a class="btn-outline">Teilnehmerstimmen</a>
+    <a class="btn-outline" (click)="scrollTo('testimonials')">Teilnehmerstimmen</a>
   </div>
 </app-section>
 
@@ -36,32 +51,40 @@
   <div class="columns-2">
     <div>
       <app-process-step headline="Teilnehmerauswahl">
-        Da wir mit unseren Kursteilnehmern intensiv zusammenarbeiten, fließt viel Arbeit in die Beratung und Auswahl der richtigen Teilnehmer. 
+        Da wir mit unseren Kursteilnehmern intensiv zusammenarbeiten, fließt viel Arbeit in die Beratung und Auswahl der
+        richtigen Teilnehmer.
       </app-process-step>
 
       <app-process-step headline="Web Entwicklung">
-        Du erlernst wie das Internet funktioniert und baust innerhalb weniger Tage bis Wochen professionelle Webseiten, sowie grundlegende Prinzipien der Softwareentwicklung.
+        Du erlernst wie das Internet funktioniert und baust innerhalb weniger Tage bis Wochen professionelle Webseiten,
+        sowie grundlegende Prinzipien der Softwareentwicklung.
       </app-process-step>
 
       <app-process-step headline="Programmierlogik">
-        Du erlernst durch praxisnahe Ausbildung das HAndwerk des Programmierers und lernst Programmiersprachen mit denen du ganze Software & Softwarebausteine entwickeln kannst.
+        Du erlernst durch praxisnahe Ausbildung das HAndwerk des Programmierers und lernst Programmiersprachen mit denen
+        du ganze Software & Softwarebausteine entwickeln kannst.
       </app-process-step>
     </div>
 
     <div>
-      FOTO
+      <img src="./assets/img/process1.png" class="width-60">
     </div>
   </div>
 
   <div class="columns-2">
-    <div>FOTO</div>
+    <div>
+      <img src="./assets/img/process2.png" class="width-60">
+    </div>
     <div>
       <app-process-step headline="Portolio mit Praxisprojekte">
-        Die gesamte Weiterbildung erfolgt praxisnah. Du erstellst Programme, Spiele und komplexe Software alleine und zusammen in Gruppen mit Teilnehmern aus ganz Deutschland und Österreich und erstellst ein Portfolio an hochwertigen Projekten.
+        Die gesamte Weiterbildung erfolgt praxisnah. Du erstellst Programme, Spiele und komplexe Software alleine und
+        zusammen in Gruppen mit Teilnehmern aus ganz Deutschland und Österreich und erstellst ein Portfolio an
+        hochwertigen Projekten.
       </app-process-step>
 
       <app-process-step headline="Einstieg in deinen IT-Job">
-        Durch ein gezieltes Bewerbertraining und unsere bewährte Beratung, unterstützen wir unsere Teilnehmer bei dem Einstieg in ihren ersten IT Job.
+        Durch ein gezieltes Bewerbertraining und unsere bewährte Beratung, unterstützen wir unsere Teilnehmer bei dem
+        Einstieg in ihren ersten IT Job.
       </app-process-step>
     </div>
 
@@ -70,6 +93,7 @@
 
 
 <app-section [graybg]="true" headline="" [padding]="true">
+  <a class="anchor" id="testimonials"></a>
   <app-testimonial-slider></app-testimonial-slider>
 </app-section>
 
@@ -111,7 +135,7 @@
 
 <app-section [graybg]="true" headline="So schaffst du den Einstieg in den ersten IT-Job" [padding]="true">
   <div class="space-between">
-    <app-card img="team_stock.png" title="Zertifikat & Zeugnis">
+    <app-card img="certificate.png" title="Zertifikat & Zeugnis">
       <p>Nach Abschluss der Weiterbildung erhältst du Zertifikat & Zeugnis, die deine neu gewonnen Fähigkeiten
         dokumentieren.</p>
     </app-card>
@@ -121,7 +145,7 @@
         Sprung in eine IT-Karriere schaffst - gerade als Quereinsteiger.</p>
     </app-card>
 
-    <app-card img="team_stock.png" title="Baue dein Portfolio">
+    <app-card img="portfolio.png" title="Baue dein Portfolio">
       <p>Projekte aus der Praxis beweisen deine neu erworbenen Fähigkeiten und Programmierkenntnisse und sind für jeden
         Arbeitgeber essentiell.</p>
     </app-card>

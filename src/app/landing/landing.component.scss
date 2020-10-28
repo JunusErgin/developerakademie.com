@@ -11,6 +11,10 @@
   box-shadow: 0px 2px 4px rgba(211, 206, 206, 0.5);
   position: relative;
 
+  @media (min-width: 1200px) {
+    flex-basis: 30.00%
+  }
+
 
   img {
     width: 16px;
@@ -35,6 +39,10 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
+
+    @media(max-width: 850px) {
+      width: 100%;
+    }
   }
 
   img {
@@ -47,6 +55,10 @@
       flex-direction: column;
       align-items: center;
       height: 60vh;
+    }
+
+    @media(max-width: 850px) {
+      display: none;
     }
   }
 }
