@@ -6,13 +6,15 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./landing.component.scss']
 })
 export class LandingComponent implements OnInit {
-  
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  scrollTo(id) {
-    document.getElementById(id).scrollIntoView();
+  scrollTo(anchor: string) {
+    let elmnt = document.getElementById(anchor);
+    elmnt.scrollIntoView();
   }
+
 }
