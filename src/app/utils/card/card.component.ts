@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CardComponent implements OnInit {
   @Input() img = '';
   @Input() title = '';
+  @Input() height = '180px';
 
 
   constructor() { }

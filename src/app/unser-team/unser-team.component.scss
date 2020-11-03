@@ -1,0 +1,32 @@
+.coworker-card {
+    margin: 20px;
+    width: 20em;
+    border-radius: 20px;
+    background-position: cover;
+    box-shadow: 2px 2px lightgrey;
+    animation: coworkerAni 2s ease-out; 
+
+    b {
+        justify-items: center;
+    }
+    .card-text {
+        height: 15em;
+    }
+
+    h3{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+}
+
+
+@keyframes coworkerAni {
+    0% {
+        transform: translateY(300px);
+        
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

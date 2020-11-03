@@ -63,6 +63,7 @@
   }
 }
 
+
 .study-section {
   display: flex;
   flex-wrap: wrap;
@@ -81,4 +82,16 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+
+.tp-widget-wrapper {
+  color: red;
+
+}
+
+.trustpilot-widget iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
 }

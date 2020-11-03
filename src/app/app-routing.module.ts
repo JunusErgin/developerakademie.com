@@ -5,6 +5,7 @@ import { JobsLandingComponent } from './jobs-landing/jobs-landing.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { LandingComponent } from './landing/landing.component';
 import { DatenschutzComponent } from './legal/datenschutz/datenschutz.component';
+import { UnserTeamComponent } from './unser-team/unser-team.component';
 
 const routes: Routes = [{
   component: JobDetailComponent,
@@ -18,6 +19,9 @@ const routes: Routes = [{
 }, {
   component: DatenschutzComponent,
   path: 'data-protection'
+}, {
+  component: UnserTeamComponent,
+  path: 'unser-team'
 }, {
   redirectTo: '/',
   path: '**'

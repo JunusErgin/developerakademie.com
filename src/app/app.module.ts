@@ -20,6 +20,7 @@ import { StatisticsComponent } from './landing/statistics/statistics.component';
 import { PreFooterComponent } from './pre-footer/pre-footer.component';
 import { SecondRowComponent } from './landing/second-row/second-row.component';
 import { DatenschutzComponent } from './legal/datenschutz/datenschutz.component';
+import { UnserTeamComponent } from './unser-team/unser-team.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { DatenschutzComponent } from './legal/datenschutz/datenschutz.component'
     StatisticsComponent,
     PreFooterComponent,
     SecondRowComponent,
-    DatenschutzComponent
+    DatenschutzComponent,
+    UnserTeamComponent
   ],
   imports: [
     BrowserModule,
