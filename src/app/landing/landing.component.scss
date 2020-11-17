@@ -47,6 +47,10 @@
 
   .trustpilot-image {
     width: 25vw;
+
+    &:hover {
+      filter: contrast(1.3);
+    }
   }
 
   .aot-team-image {

@@ -6,9 +6,11 @@
 
     <b>{{ t.name }}</b>
 
-    <img [style]="'object-position: ' + t.offset + ' 0px;'" class="testimonial-picture" src="./assets/img/testimonials/{{ t.image }}.jpg">
+    <img [style]="'object-position: ' + t.offset + ' 0px;'" class="testimonial-picture hide-mobile" src="./assets/img/testimonials/{{ t.image }}.jpg">
   </div>
 </div>
+
+<img class="testimonial-picture-mobile" src="./assets/img/testimonials/{{ testimonials[currentImage].image }}.jpg">
 
 <div class="testimonial-switch-button testimonial-button-left" (click)="lastImage()">
   <img src="./assets/icons/arrow_right.png">

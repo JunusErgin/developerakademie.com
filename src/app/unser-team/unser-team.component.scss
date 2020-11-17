@@ -4,7 +4,7 @@
     border-radius: 20px;
     background-position: cover;
     box-shadow: 2px 2px lightgrey;
-    animation: coworkerAni 2s ease-out; 
+    animation: coworkerAni 225ms ease-out; 
 
     b {
         justify-items: center;
@@ -24,9 +24,10 @@
 @keyframes coworkerAni {
     0% {
         transform: translateY(300px);
-        
+        opacity: 0;        
     }
     100% {
         transform: translateY(0px);
+        opacity: 1;
     }
 }

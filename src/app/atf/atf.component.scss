@@ -11,5 +11,9 @@
 
   p {
     max-width: 40%;
+
+    @media(max-width: 850px) {
+      max-width: 100%;
+    }
   }
 }

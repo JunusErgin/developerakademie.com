@@ -62,6 +62,14 @@ a.anchor {
   padding-right: 280px;
 }
 
+.margin-bottom-40 {
+  margin-bottom: 40px;
+}
+
+.margin-top-120 {
+  margin-top: 120px !important;
+}
+
 .width-60 {
   width: 60%;
 }
@@ -166,6 +174,11 @@ h3 {
   align-items: center;
 }
 
+.h-center {
+  display: flex !important;
+  justify-content: center;
+}
+
 .space-between {
   display: flex;
   justify-content: space-between;
@@ -175,6 +188,8 @@ h3 {
   display: flex;
   justify-content: space-around;
 }
+
+
 
 .columns-2 {
   display: flex;
@@ -196,6 +211,10 @@ h3 {
 .highlight-red {
   color: white;
   background-color: #fd7065;
+}
+
+.hide-desktop {
+  display: none;
 }
 
 @media(max-width: 1800px) {
@@ -225,6 +244,7 @@ h3 {
     padding-left: 50px;
     padding-right: 50px;
   }
+
   .space-between {
     flex-direction: column;
     align-items: center;
@@ -238,8 +258,14 @@ h3 {
     width: 100%;
 
     div {
-      width: 100%;;
+      width: 100%;
+      ;
     }
   }
+
+  .hide-desktop {
+    display: block;
+  }
+
 
 }

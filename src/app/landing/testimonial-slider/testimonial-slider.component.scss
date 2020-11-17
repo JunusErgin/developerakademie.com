@@ -33,7 +33,11 @@
     font-size: 14px;
 
     @media (min-width: 1200px) {
-      width: 60%;  
+      width: 60%; 
+    }
+
+    @media (max-width: 800px) {
+      width: 80%; 
     }
   }
 
@@ -89,4 +93,22 @@
 
 .testimonial-button-right {
   right: -24px;
+}
+
+.testimonial-picture-mobile {
+  display: none;
+}
+
+@media(max-width: 800px){
+  .testimonial-picture-mobile {
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    top: -25px;
+    left: -25px;
+    border: 5px solid white;
+    object-fit: cover;
+  }
 }
