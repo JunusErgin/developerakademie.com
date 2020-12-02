@@ -2,7 +2,7 @@
   [class.padding-bottom-top]="padding">
   <div [ngStyle]="{'align-items': alignLeft ? 'flex-start' :'center'}" class="headline" *ngIf="headline.length > 0">
     <div class="seperator"></div>
-    <h2>{{ headline }}</h2>
+    <h2 [class.centerHeadlineMobile]="centerHeadlineMobile">{{ headline }}</h2>
   </div>
   <ng-content></ng-content>
 </div>

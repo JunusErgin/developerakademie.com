@@ -11,6 +11,7 @@ export class SectionComponent implements OnInit {
   @Input() headline = '';
   @Input() padding = false;
   @Input() alignLeft = false;
+  @Input() centerHeadlineMobile = false;
 
   constructor() { }
 
