@@ -9,6 +9,7 @@ export class CardComponent implements OnInit {
   @Input() img = '';
   @Input() title = '';
   @Input() height = '180px';
+  @Input() objectPosition = 'center';
 
 
   constructor() { }

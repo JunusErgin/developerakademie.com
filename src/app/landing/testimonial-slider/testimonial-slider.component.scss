@@ -1,9 +1,15 @@
 :host {
   position: relative;
   height: 300px;
-  width: 100%;
+  width: 80%;
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  @media (max-width: 1200px) {
+    width: 100%; 
+  }
 }
+
 
 .testimonial-container {
   height: 300px;

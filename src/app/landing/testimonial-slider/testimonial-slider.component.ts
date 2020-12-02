@@ -15,7 +15,7 @@ export class TestimonialSliderComponent implements OnInit {
   ngOnInit(): void {
     this.testimonials.push({
       offset: '-90px',
-      name: 'David K.',
+      name: 'David',
       image: 'david',
       text: 'Bereits nach 2 Monaten Coaching hat David ein Niveau erreicht, bei dem er schon als Web-Programmierer arbeiten kann. Er baut dabei mithilfe von JavaScript, CSS und HTML gerade zwei Webseiten für private Kunden (ein Notariat und eine Anwaltskanzlei). Aktuell lernt er bei der Developer Akademie noch das Angular Framework, um danach dauerhaft als Freelancer in der IT Fuß zu fassen.'
     }, {

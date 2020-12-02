@@ -8,7 +8,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 export class StatisticsComponent implements OnInit {
   innerWidth: any;
   selectorWidth = 150;
-  selected = 2;
+  selected = 0;
 
   constructor() { }
 
