@@ -3,7 +3,6 @@
     display: flex;
     background-size: cover;
     background-image: url("./../../assets/img/CTA_yellow.png");
-
     .columns-2 {
         display: flex;
         align-items: center;
@@ -11,7 +10,14 @@
     }
 }
 
-.flex-end{
+.flex-end {
     display: flex;
     justify-content: flex-end;
+}
+
+.subtitle {
+    padding-bottom: 16px;
+    @media(max-width: 850px) {
+        font-size: 16px;
+    }
 }

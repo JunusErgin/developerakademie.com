@@ -1,40 +1,42 @@
 <div class="switch-section">
-  <div (click)="select(0)" [class.color-white]="selected == 0">Hintergrund</div>
-  <div (click)="select(1)" [class.color-white]="selected == 1">Regionen</div>
-  <div (click)="select(2)" [class.color-white]="selected == 2">Alter</div>
-  <div class="switch-selector" [style.left]="(selectorWidth * selected) + 'px'"></div>
+    <div (click)="select(0)" [class.color-white]="selected == 0">Länder</div>
+    <div (click)="select(1)" [class.color-white]="selected == 1">Regionen</div>
+    <div (click)="select(2)" [class.color-white]="selected == 2">Alter</div>
+    <div class="switch-selector" [style.left]="(selectorWidth * selected) + 'px'"></div>
 </div>
 
 <div class="switch-slides">
-  <div class="switch-slide" [style.transform]="'translateX(' + (0 - selected * 100) + '%)'">
-    <div>Mittlerweile haben wir Teilnehmer mit Migrationshintergründen aus allen Teilen der Welt (Stand: 15.11.2020)
+    <div class="switch-slide" [style.transform]="'translateX(' + (0 - selected * 100) + '%)'">
+
+        <div class="height-280">
+            <img src="./assets/img/worldmap.png">
+        </div>
+        <div class="li text-center">Mittlerweile haben wir Teilnehmer aus allen Teilen der Welt<br>(Karte Stand: 01.12.2020)
+        </div>
     </div>
-    <div>
-      <img src="./assets/img/worldmap.png">
+    <div class="switch-slide" [style.transform]="'translateX(' + (0 - selected * 100) + '%)'">
+        <div class="height-280"><img src="./assets/img/AUT_DE.png">
+        </div>
+        <div class="li text-center">Unsere Teilnehmer wohnen in ganz Deutschland und Österreich verteilt <br>(Karte Stand: 01.12.2020)
+        </div>
     </div>
-  </div>
-  <div class="switch-slide" [style.transform]="'translateX(' + (0 - selected * 100) + '%)'">
-    <div>Unsere Teilnehmer wohnen in ganz Deutschland und Österreich verteilt (Stand: 15.11.2020)</div>
-    <div><img src="./assets/img/AUT_DE.png">
-    </div>
-  </div>
 
 
-  <div class="switch-slide" [style.transform]="'translateX(' + (0 - selected * 100) + '%)'">
-    <div class="margin-bottom-40">Je nach Situation und Zielen kann professionell Programmieren Lernen ein sinnvoller
-      Schritt für Menschen mit unterschiedlichem Alter sein. (Stand: 31.10.2020)</div>
-    <div class="columns-2 background-container">
-      <div class="line-height-32">
-        <b>Alter:</b><br>
-        18 - 25: <span class="switch-highlight">29%</span> <br>
-        25 - 35: <span class="switch-highlight">48%</span> <br>
-        35 - 50: <span class="switch-highlight">23%</span> <br>
+    <div class="switch-slide" [style.transform]="'translateX(' + (0 - selected * 100) + '%)'">
+        <div class="columns-2 background-container">
+            <div style="display: flex; justify-content: flex-end;">
+                <div class="line-height-32 height-280 li">
+                    <b>Alter:</b><br> 18 - 25: <span class="switch-highlight">29%</span> <br> 25 - 35: <span class="switch-highlight">48%</span> <br> 35 - 50: <span class="switch-highlight">23%</span> <br>
 
-      </div>
-      <div>
-        <img src="./assets/img/pie_chart.png">
-      </div>
+                </div>
+            </div>
+            <div style="align-items: flex-start; display: flex; justify-content: flex-start;">
+                <img src="./assets/img/pie_chart.png">
+            </div>
+
+        </div>
+
+        <div class="li text-center">Je nach Situation und Zielen kann professionell Programmieren Lernen ein sinnvoller Schritt für Menschen mit unterschiedlichem Alter sein. (Stand: 31.10.2020)</div>
 
     </div>
-  </div>
 </div>

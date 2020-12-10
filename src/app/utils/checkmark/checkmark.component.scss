@@ -1,21 +1,21 @@
 :host {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .checkmark {
-  background-color: #fd7065;
-  border-radius: 100%;
-  padding: 4px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
-
-  img {
-    width: 16px;
-  }
+    background-color: #fd7065;
+    border-radius: 100%;
+    padding: 4px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    flex-shrink: 0;
+    img {
+        width: 16px;
+    }
 }

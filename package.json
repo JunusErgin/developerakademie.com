@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "gitpush": "git add . && git commit -m \"new update\" && git push"
+    "gitpush": "git add . && git commit -m \"new update\" && git push",
+    "release": "ng build --prod --base-href=\\karriere\\"
   },
   "private": true,
   "dependencies": {

@@ -1,92 +1,84 @@
 :host {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .switch-section {
-  display: flex;
-  width: 450px;
-  justify-content: center;
-  position: relative;
-  font-weight: 700;
-
-  div {
-    padding: 8px 0px;
-    width: 150px;
     display: flex;
+    width: 450px;
     justify-content: center;
-    cursor: pointer;
-    transition: all 225ms ease-in-out;
-  }
+    position: relative;
+    font-weight: 700;
+    div {
+        padding: 8px 0px;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 225ms ease-in-out;
+    }
 }
 
 .switch-selector {
-  padding: 0 !important;
-  position: absolute;
-  left: 0;
-  width: 150px;
-  height: 100%;
-  z-index: -1;
-  background-color: #fd7065;
-  border-radius: 4px;
-  transition: all 225ms ease-in-out;
+    padding: 0 !important;
+    position: absolute;
+    left: 0;
+    width: 150px;
+    height: 100%;
+    z-index: -1;
+    background-color: #fd7065;
+    border-radius: 4px;
+    transition: all 225ms ease-in-out;
 }
 
 .color-white {
-  color: white !important;
+    color: white !important;
 }
 
 .switch-slides {
-  //  background-color: whitesmoke;
-  min-height: 100px;
-  width: 100%;
-  margin-top: 48px;
-  overflow-x: hidden;
-  display: flex;
+    //  background-color: whitesmoke;
+    min-height: 100px;
+    width: 80%;
+    margin-top: 48px;
+    overflow-x: hidden;
+    display: flex;
 }
 
 .switch-slide {
-  flex-shrink: 0;
-  width: 100%;
-  transition: all 225ms ease-in-out;
-
-  img {
+    flex-shrink: 0;
     width: 100%;
-    height: 300px;
-    object-fit: contain;
-  }
+    transition: all 225ms ease-in-out;
+    img {
+        width: 100%;
+        height: 280px;
+        object-fit: contain;
+    }
 }
 
 .switch-highlight {
-  color: #EF9E97;
+    color: #EF9E97;
 }
 
-
 .background-container {
-  padding: 0px 120px;
-
-  img {
-    height: unset !important;
-  }
+    // padding: 0px 120px;
+    img {
+        height: unset !important;
+    }
 }
 
 @media(max-width: 850px) {
-
-  .switch-section {
-    display: flex;
-    width: 300px;
-
-    div {
-      width: 100px;
+    .switch-section {
+        display: flex;
+        width: 300px;
+        div {
+            width: 100px;
+        }
     }
-  }
-
-  .switch-selector {
-    width: 100px;
-  }
-
-  .background-container {
-    padding: 0;
-  }
+    .switch-selector {
+        width: 100px;
+    }
+    .background-container {
+        padding: 0;
+    }
 }
