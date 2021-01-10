@@ -1,0 +1,70 @@
+.head-section {
+    padding-top: 80px;
+    padding-bottom: 24px;
+    display: flex;
+}
+
+.head-left {
+    width: 60%;
+    p {
+        font-size: 14px;
+    }
+}
+
+.btn-outline {
+    display: inline-block;
+}
+
+.head-right {
+    width: 40%;
+    img {
+        width: 180%;
+    }
+}
+
+.trustpilot-image {
+    height: 48px;
+}
+
+@media (max-width: 800px) {
+    .head-left {
+        width: 100%;
+    }
+    .head-right {
+        display: none;
+    }
+    .round-row {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 200px;
+        height: unset !important;
+        background-size: 200% 100%;
+    }
+}
+
+.round-row {
+    background-image: url('./../../../assets/img/green_part.png');
+    background-size: 130% 100%;
+    height: 200px;
+    background-position: top;
+    display: flex;
+    justify-content: space-evenly;
+    .round-row-step {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        text-align: center;
+        align-items: center;
+        justify-content: flex-end;
+        padding-bottom: 12px;
+        color: rgba(142, 152, 156);
+        img {
+            width: 60px;
+        }
+        span {
+            font-weight: 600;
+            margin-top: 8px;
+            font-size: 14px;
+        }
+    }
+}
