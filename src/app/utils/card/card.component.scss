@@ -1,40 +1,35 @@
 :host {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 30%;
-  background-color: white;
-  border-radius: 4px;
-  overflow: hidden;
-
-  img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-  }
-
-
-  .card-content {
-    padding: 16px;
-    text-align: left;
-
-
-    b {
-      text-align: center !important;
-      display: flex;
-      justify-content: center;
-      min-height: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30%;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
     }
-  }
+    .card-content {
+        padding: 16px;
+        text-align: left;
+        b {
+            text-align: center !important;
+            display: flex;
+            justify-content: center;
+            min-height: 48px;
+        }
+    }
 }
 
 .card-text {
     color: rgb(91, 97, 106);
-    font-size: 12px;
+    font-size: 14px;
 }
 
 @media(max-width: 850px) {
-    :host {
+     :host {
         margin-bottom: 32px;
         border-radius: 24px;
         max-width: unset;

@@ -1,13 +1,13 @@
 .head-section {
     padding-top: 80px;
-    padding-bottom: 24px;
+    padding-bottom: 8px;
     display: flex;
 }
 
 .head-left {
     width: 60%;
     p {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
@@ -38,7 +38,7 @@
         align-items: center;
         padding-top: 200px;
         height: unset !important;
-        background-size: 200% 100%;
+        background-size: 200% 100% !important;
     }
 }
 
@@ -56,7 +56,7 @@
         text-align: center;
         align-items: center;
         justify-content: flex-end;
-        padding-bottom: 12px;
+        padding-bottom: 18px;
         color: rgba(142, 152, 156);
         img {
             width: 60px;

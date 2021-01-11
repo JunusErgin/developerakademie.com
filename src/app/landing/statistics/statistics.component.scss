@@ -82,3 +82,9 @@
         padding: 0;
     }
 }
+
+@media(min-width: 1200px) {
+    .bigscreenmargin {
+        margin-top: 16px;
+    }
+}

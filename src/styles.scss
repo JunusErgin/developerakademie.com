@@ -284,4 +284,8 @@ h3 {
     .hide-desktop {
         display: block !important;
     }
+    .center-mobile {
+        display: flex !important;
+        justify-content: center;
+    }
 }
