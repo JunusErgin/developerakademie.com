@@ -22,6 +22,7 @@ import { SecondRowComponent } from './landing/second-row/second-row.component';
 import { DatenschutzComponent } from './legal/datenschutz/datenschutz.component';
 import { UnserTeamComponent } from './unser-team/unser-team.component';
 import { HeadSectionComponent } from './landing/head-section/head-section.component';
+import { MobileTestimonialSliderComponent } from './landing/mobile-testimonial-slider/mobile-testimonial-slider.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { HeadSectionComponent } from './landing/head-section/head-section.compon
     SecondRowComponent,
     DatenschutzComponent,
     UnserTeamComponent,
-    HeadSectionComponent
+    HeadSectionComponent,
+    MobileTestimonialSliderComponent
   ],
   imports: [
     BrowserModule,
