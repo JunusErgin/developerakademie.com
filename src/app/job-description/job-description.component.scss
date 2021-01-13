@@ -1,8 +1,15 @@
 .job-description {
-  border-radius: 4px;
-  border: 1px solid #ccd1d9;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 32px;
+    border-radius: 4px;
+    border: 1px solid #ccd1d9;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    @media(max-width: 800px) {
+        flex-direction: column;
+        .btn-outline {
+            margin-top: 16px;
+            margin-bottom: 0;
+        }
+    }
 }
