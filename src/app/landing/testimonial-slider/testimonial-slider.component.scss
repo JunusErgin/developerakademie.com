@@ -1,120 +1,120 @@
+$mobile-height: 450px;
 :host {
-  position: relative;
-  height: 300px;
-  width: 80%;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  @media (max-width: 1200px) {
-    width: 100%; 
-  }
+    position: relative;
+    height: 300px;
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: 800px) {
+        height: $mobile-height;
+    }
+    @media (max-width: 1200px) {
+        width: 100%;
+    }
 }
 
-
 .testimonial-container {
-  height: 300px;
-  width: 100%;
-  background-color: white;
-  display: flex;
-  overflow-x: hidden;
-  position: relative;
-
-
-  .testimonial-slide {
-    transition: all 225ms ease-in-out;
     height: 300px;
-    position: relative;
-    overflow: hidden;
     width: 100%;
+    background-color: white;
     display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    background-color: 0;
-  }
-
-  p {
-    width: 40%;
-    margin-top: 64px;
-    margin-left: 64px;
-    font-size: 14px;
-
-    @media (min-width: 1200px) {
-      width: 60%; 
-    }
-
+    overflow-x: hidden;
+    position: relative;
     @media (max-width: 800px) {
-      width: 80%; 
+        height: $mobile-height;
     }
-  }
-
-  b {
-    margin-top: auto;
-    margin-left: 64px;
-    margin-bottom: 64px;
-  }
+    .testimonial-slide {
+        transition: all 225ms ease-in-out;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        background-color: 0;
+        @media (max-width: 800px) {
+            height: $mobile-height;
+        }
+    }
+    p {
+        width: 40%;
+        margin-top: 64px;
+        margin-left: 64px;
+        font-size: 14px;
+        @media (min-width: 1200px) {
+            width: 60%;
+        }
+        @media (max-width: 800px) {
+            width: 70%;
+        }
+    }
+    b {
+        margin-top: auto;
+        margin-left: 64px;
+        margin-bottom: 64px;
+    }
 }
 
 .testimonial-picture {
-  position: absolute;
-  width: 265px;
-  filter: contrast(1.25);
-
-  object-fit: cover;
-  height: 100%;
-  right: 0;
-  border-bottom-left-radius: 100%;
-  border-top-left-radius: 100%;
-
+    position: absolute;
+    width: 265px;
+    filter: contrast(1.25);
+    object-fit: cover;
+    height: 100%;
+    right: 0;
+    border-bottom-left-radius: 100%;
+    border-top-left-radius: 100%;
 }
 
-
 .testimonial-switch-button {
-  height: 48px;
-  width: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  background-color: #fd7065;
-  border-radius: 100%;
-  position: absolute;
-  cursor: pointer;
-  top: calc(150px - 48px/2);
-  border: 1px solid white;
-
-  &:hover {
-    background-color: #fc867e;
-  }
-
-  img {
-    width: 40%;
-  }
+    height: 48px;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #fd7065;
+    border-radius: 100%;
+    position: absolute;
+    cursor: pointer;
+    top: calc(150px - 48px/2);
+    @media (max-width: 800px) {
+        top: calc((#{$mobile-height}) / 2 - 48px/2);
+    }
+    border: 1px solid white;
+    &:hover {
+        background-color: #fc867e;
+    }
+    img {
+        width: 40%;
+    }
 }
 
 .testimonial-button-left {
-  left: -24px;
-  transform: rotate(180deg);
+    left: -24px;
+    transform: rotate(180deg);
 }
 
-
 .testimonial-button-right {
-  right: -24px;
+    right: -24px;
 }
 
 .testimonial-picture-mobile {
-  display: none;
+    display: none;
 }
 
-@media(max-width: 800px){
-  .testimonial-picture-mobile {
-    display: block;
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    top: -25px;
-    left: -25px;
-    border: 5px solid white;
-    object-fit: cover;
-  }
+@media(max-width: 800px) {
+    .testimonial-picture-mobile {
+        display: block;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        top: -25px;
+        left: -25px;
+        border: 5px solid white;
+        object-fit: cover;
+    }
 }
