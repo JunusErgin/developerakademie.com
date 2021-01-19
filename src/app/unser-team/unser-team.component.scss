@@ -1,42 +1,40 @@
 .coworker-card {
-  margin: 20px;
-  width: 20em;
-  border-radius: 20px;
-  background-position: cover;
-  box-shadow: 2px 2px lightgrey;
-  animation: coworkerAni 225ms ease-out;
-
-  b {
-    justify-items: center;
-  }
-
-  .card-text {
-    height: 15em;
-  }
-
-  h3 {
-    font-size: 20px;
-    text-align: center;
-  }
-
+    margin: 20px;
+    width: 20em;
+    border-radius: 20px;
+    background-position: cover;
+    box-shadow: 2px 2px lightgrey;
+    animation: coworkerAni 225ms ease-out;
+    b {
+        justify-items: center;
+    }
+    .card-text {
+        height: 15em;
+    }
+    h3 {
+        font-size: 20px;
+        margin-block-start: 0;
+        text-align: center;
+    }
+    p {
+        text-align: justify;
+    }
 }
 
-
 @keyframes coworkerAni {
-  0% {
-    transform: translateY(300px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
+    0% {
+        transform: translateY(300px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 .mobile-flex-column {
-  @media(max-width: 850px) {
-    flex-direction: column;
-    align-items: center;
-  }
+    @media(max-width: 850px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
