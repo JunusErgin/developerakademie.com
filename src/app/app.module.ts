@@ -24,6 +24,9 @@ import { UnserTeamComponent } from './unser-team/unser-team.component';
 import { HeadSectionComponent } from './landing/head-section/head-section.component';
 import { MobileTestimonialSliderComponent } from './landing/mobile-testimonial-slider/mobile-testimonial-slider.component';
 import { AgbComponent } from './legal/agb/agb.component';
+import { WiderrufComponent } from './legal/widerruf/widerruf.component';
+import { CookieComponent } from './legal/cookie/cookie.component';
+import { ImprintComponent } from './legal/imprint/imprint.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +51,10 @@ import { AgbComponent } from './legal/agb/agb.component';
     UnserTeamComponent,
     HeadSectionComponent,
     MobileTestimonialSliderComponent,
-    AgbComponent
+    AgbComponent,
+    WiderrufComponent,
+    CookieComponent,
+    ImprintComponent
   ],
   imports: [
     BrowserModule,
