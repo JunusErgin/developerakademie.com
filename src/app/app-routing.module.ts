@@ -4,6 +4,7 @@ import { JobDetailComponent } from './job-detail/job-detail.component';
 import { JobsLandingComponent } from './jobs-landing/jobs-landing.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { LandingComponent } from './landing/landing.component';
+import { AgbComponent } from './legal/agb/agb.component';
 import { DatenschutzComponent } from './legal/datenschutz/datenschutz.component';
 import { UnserTeamComponent } from './unser-team/unser-team.component';
 
@@ -19,6 +20,9 @@ const routes: Routes = [{
 }, {
   component: DatenschutzComponent,
   path: 'data-protection'
+},{
+  component: AgbComponent,
+  path: 'agb'
 }, {
   component: UnserTeamComponent,
   path: 'unser-team'

@@ -23,6 +23,7 @@ import { DatenschutzComponent } from './legal/datenschutz/datenschutz.component'
 import { UnserTeamComponent } from './unser-team/unser-team.component';
 import { HeadSectionComponent } from './landing/head-section/head-section.component';
 import { MobileTestimonialSliderComponent } from './landing/mobile-testimonial-slider/mobile-testimonial-slider.component';
+import { AgbComponent } from './legal/agb/agb.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { MobileTestimonialSliderComponent } from './landing/mobile-testimonial-s
     DatenschutzComponent,
     UnserTeamComponent,
     HeadSectionComponent,
-    MobileTestimonialSliderComponent
+    MobileTestimonialSliderComponent,
+    AgbComponent
   ],
   imports: [
     BrowserModule,
