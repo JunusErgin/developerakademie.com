@@ -23,12 +23,21 @@ const routes: Routes = [{
 }, {
   component: DatenschutzComponent,
   path: 'data-protection'
+}, {
+  component: DatenschutzComponent,
+  path: 'datenschutz.html'
 },{
   component: AgbComponent,
   path: 'agb'
 },{
+  component: AgbComponent,
+  path: 'agb.html'
+},{
   component: WiderrufComponent,
   path: 'widerruf'
+},{
+  component: WiderrufComponent,
+  path: 'widerruf.html'
 }, {
   component: UnserTeamComponent,
   path: 'unser-team'
@@ -38,6 +47,9 @@ const routes: Routes = [{
 },{
   component: ImprintComponent,
   path: 'imprint'
+},{
+  component: ImprintComponent,
+  path: 'impressum.html'
 }, {
   redirectTo: '/',
   path: '**'
