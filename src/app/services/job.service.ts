@@ -8,7 +8,7 @@ export class JobService {
     {
       "category": "Engineering",
       "title": "Senior Web Engineer",
-      "description": "In diesem Job verwandelst du Programmierneulinge in Profis. Du unterrichtest Studenten in Themen, wie JavaScript, OOP, REST APIs und Angular. Nebenbei hilfst du unseren Lehrplan stetig zu optimieren und der aktuellen Marktsituation anzupassen. Da unsere Studenten teilweise praxisprojekte entwickeln, unterstützt du auch hier, sorgst für eine gute Architektur und das Einhalten von gängigen Codeprinzipien. ",
+      "description": "In diesem Job verwandelst du Programmierneulinge in Profis. Du unterrichtest Studenten in Themen, wie JavaScript, OOP, REST APIs und Angular. Nebenbei hilfst du unseren Lehrplan stetig zu optimieren und der aktuellen Marktsituation anzupassen. Da unsere Studenten teilweise Praxisprojekte entwickeln, unterstützt du auch hier und sorgst für eine gute Architektur und das Einhalten von gängigen Codeprinzipien. ",
       "requirements": ["Du sprichst Deutsch als Muttersprache", "Du hast sehr gute Kenntnisse in HTML, CSS und JavaScript.", "Du hast Spaß daran, motivierte Programmieranfänger zu coachen"],
       "optional_requirements": ["Du kennst dich mit einem JS-Framework (Angular, React, Vue) aus."],
       "normal_day": ["Du coachst Programmieranfänger", "Du betreust Software-Projekte von kleinen Gruppen", "Du wirkst aktiv bei externen Software-Aufträgen mit", "Du gestaltest unseren Lehrplan aktiv mit und hilfst dabei, diesen zu optimieren."],
@@ -26,7 +26,7 @@ export class JobService {
     {
       "category": "Office",
       "title": "Backoffice Manager",
-      "description": "In diesem Job assistierst du die Geschäftsführung bei diversen Aufgaben, die täglich anfallen. Das erstreckt sich vom senden einre Postkarte bis hin zum führen von Kundengesprächen.",
+      "description": "In diesem Job assistierst du der Geschäftsführung bei diversen Aufgaben, die täglich anfallen. Das erstreckt sich vom Senden einer Postkarte bis hin zu Kundengesprächen.",
       "requirements": ["Du sprichst sehr gut Deutsch", "Du bist ein sehr organisierter Mensch", "Excel, Word und Powerpoint sind kein Frendwort für dich", "Du hast Spaß daran in einer Statup-Athmosphäre zu arbeiten"],
       "optional_requirements": ["Du bist ein offener und kommunikativer Mensch", "Du hast schon einmal von HTML, CSS oder SCRUM gehört"],
       "normal_day": ["Du telefonierst mit potentiellen Kunden und bringst in Erfahrung, ob unsere Ausbildung den Interessenten helfen kann", "Du unterstützt die Firma im Accounting", "Du übernimmst diverse Verwaltungsaufgaben"],
