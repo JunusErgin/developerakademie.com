@@ -1,29 +1,30 @@
 <div class="padding-left-right margin-top-120">
   <div>
-    <b>Stellenausschreibungen > {{ job['title'] }} · {{ job['fulltime'] }} (m/w/d)</b>
+    <h2>Stellenausschreibungen > {{ job['title'] }} · {{ job['fulltime'] }} (m/w/d)</h2>
   </div>
 
 
   <div class="job-detail">
     <div class="job-left">
       <p>
-        Die Developer Akademie ist eine <b>Online-Programmierakademie</b>, die Quereinsteiger binnen 6 Monaten zu <b>gefragten Programmierern</b> ausbildet. Wir betreuen unsere Kunden von der ersten Zeile Code bis zum Einstieg <b>in den ersten IT-Job</b>. Als Startup suchen wir nach motivierten Menschen, die uns dabei helfen unsere Mission zu erfüllen.      </p>
+        Die Developer Akademie ist eine <b>Online-Programmierakademie</b>, die Quereinsteiger innerhalb von 3-12 Monaten zu <b>Softwareentwicklern</b> qualifiziert. Wir betreuen unsere Kunden von der ersten Zeile Code bis zum Einstieg <b>in den ersten IT-Job</b>. Unsere Mission ist Menschen aller Fachrichtungen die Chance zu geben, erfolgreich eine zweite Karriere in der IT zu starten. Als Startup suchen wir nach motivierten Menschen, die uns dabei helfen diese Mission zu erfüllen.
+      </p>
       
       <p>{{ job['description'] }}</p>
 
-      <h2>Das solltest du mitbringen</h2>
+      <h3>Das solltest du mitbringen</h3>
       <ul *ngIf="job['requirements']">
         <li *ngFor="let req of job.requirements">{{ req }}</li>
       </ul>
 
 
-      <h2 *ngIf="job['optional_requirements'].length > 0">Optional</h2>
+      <h3 *ngIf="job['optional_requirements'].length > 0">Optional</h3>
       <ul *ngIf="job['optional_requirements']">
         <li *ngFor="let req of job.optional_requirements">{{ req }}</li>
       </ul>
 
 
-      <h2>Das machst du an einem normalen Tag</h2>
+      <h3>Das machst du an einem normalen Tag</h3>
       <ul *ngIf="job['normal_day']">
         <li *ngFor="let req of job.normal_day">{{ req }}</li>
       </ul>

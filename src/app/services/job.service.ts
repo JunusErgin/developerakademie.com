@@ -7,7 +7,7 @@ export class JobService {
   public jobs = [
     {
       "category": "Engineering",
-      "title": "Senior Web Engineer",
+      "title": "Front End -Entwickler (Web)",
       "description": "In diesem Job verwandelst du Programmierneulinge in Profis. Du unterrichtest Studenten in Themen, wie JavaScript, OOP, REST APIs und Angular. Nebenbei hilfst du unseren Lehrplan stetig zu optimieren und der aktuellen Marktsituation anzupassen. Da unsere Studenten teilweise Praxisprojekte entwickeln, unterstützt du auch hier und sorgst für eine gute Architektur und das Einhalten von gängigen Codeprinzipien. ",
       "requirements": ["Du sprichst Deutsch als Muttersprache", "Du hast sehr gute Kenntnisse in HTML, CSS und JavaScript.", "Du hast Spaß daran, motivierte Programmieranfänger zu coachen"],
       "optional_requirements": ["Du kennst dich mit einem JS-Framework (Angular, React, Vue) aus."],
