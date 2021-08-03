@@ -7,10 +7,15 @@
   <div class="job-detail">
     <div class="job-left">
       <p>
-        Die Developer Akademie ist eine <b>Online-Programmierakademie</b>, die Quereinsteiger innerhalb von 3-12 Monaten zu <b>Softwareentwicklern</b> qualifiziert. Wir betreuen unsere Kunden von der ersten Zeile Code bis zum Einstieg <b>in den ersten IT-Job</b>. Unsere Mission ist Menschen aller Fachrichtungen die Chance zu geben, erfolgreich eine zweite Karriere in der IT zu starten. Als Startup suchen wir nach motivierten Menschen, die uns dabei helfen diese Mission zu erfüllen.
+        Die Developer Akademie ist eine <b>Online-Software-Bootcamp</b>, die Quereinsteiger innerhalb von 3-12 Monaten zu <b>Softwareentwicklern</b> qualifiziert. Wir betreuen unsere Kunden von der ersten Zeile Code bis zum Einstieg <b>in den ersten IT-Job</b>. Unsere Mission ist Menschen aller Fachrichtungen die Chance zu geben, erfolgreich eine zweite Karriere in der IT zu starten. Als Startup suchen wir nach motivierten Menschen, die uns dabei helfen diese Mission zu erfüllen.
       </p>
       
       <p>{{ job['description'] }}</p>
+
+      <h3>Deine Aufgaben</h3>
+      <ul *ngIf="job['normal_day']">
+        <li *ngFor="let req of job.normal_day">{{ req }}</li>
+      </ul>
 
       <h3>Das solltest du mitbringen</h3>
       <ul *ngIf="job['requirements']">
@@ -23,11 +28,11 @@
         <li *ngFor="let req of job.optional_requirements">{{ req }}</li>
       </ul>
 
-
-      <h3>Das machst du an einem normalen Tag</h3>
-      <ul *ngIf="job['normal_day']">
-        <li *ngFor="let req of job.normal_day">{{ req }}</li>
+      <h3 *ngIf="job['offers'].length > 0">Was wir dir bieten</h3>
+      <ul *ngIf="job['optional_requirements']">
+        <li *ngFor="let req of job.offers">{{ req }}</li>
       </ul>
+
     </div>
     <div class="job-right">
       <button (click)="apply()" class="btn-outline">Jetzt bewerben</button>
