@@ -45,3 +45,25 @@ export class TestimonialSliderComponent implements OnInit {
   }
 
 }
+
+/**
+ * ,
+      {
+        offset: '0',
+        name: 'Atila',
+        image: 'atila',
+        text: 'Atila hatte u.a. auch noch andere konkrete Optionen im gesamten Bundesgebiet. Zum Beispiel in Bremen oder in Frankfurt oder auch Remote. Atila hat sich dann dazu entschieden bei einer Softwareagentur in München, die Partner der Deveoper Akademie ist, als Junior Entwickler zu starten.'
+      },
+      {
+        offset: '0',
+        name: 'Carina',
+        image: 'carina',
+        text: 'Carina hatte es geschafft innerhalb von zwei Wochen nach Abschluss des Programms ihren ersten Job als Softwareentwicklerin zu bekommen. Sie entwickelt nun Frontend & Backend für Webanwendungen im IoT-Bereich für ein Münchner Unternehmen, das dank der tollen Leistungen von Carina nun Partnerunternehmen der Developer Akademie ist. (Foto zeigt nicht Carina)'
+      },
+      {
+        offset: '0',
+        name: 'Eric',
+        image: 'eric',
+        text: 'In einer Softwareagentur in Wien ist Eric Teil eines Teams, dass für große Kunden spannende Software entwickelt. U.a. arbeitet er an Projekten, die helfen Infrastruktur mit Software abzubilden und zu steuern.'
+      },
+ */
