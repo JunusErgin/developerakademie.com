@@ -3,7 +3,7 @@
     min-height: 300px;
     color: white;
     display: flex;
-    @media(max-width: 850px) {
+    @media(max-width: 900px) {
         flex-direction: column;
         align-items: center;
     }
@@ -14,7 +14,7 @@
     margin-right: 64px;
     display: flex;
     flex-direction: column;
-    @media(max-width: 850px) {
+    @media(max-width: 900px) {
         margin-right: 0;
         text-align: center;
         align-items: center;
@@ -48,7 +48,7 @@
 .footer-container-last {
     margin-left: auto !important;
     margin-right: 0 !important;
-    @media(max-width: 850px) {
+    @media(max-width: 900px) {
         margin-left: 0 !important;
     }
 }

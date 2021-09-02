@@ -26,6 +26,14 @@
     height: 58px;
 }
 
+.tpw-top{
+    width: fit-content;
+    max-width: 190px;
+    // margin-left: -20px;
+    margin-top: 16px !important;
+}
+
+
 @media (max-width: 800px) {
     .head-left {
         width: 100%;
@@ -66,5 +74,11 @@
             margin-top: 8px;
             font-size: 14px;
         }
+    }
+}
+
+@media (max-width: 450px){
+    .head-section{
+        padding-top: 100px;
     }
 }

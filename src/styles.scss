@@ -290,3 +290,9 @@ h3 {
         align-items: center;
     }
 }
+
+@media(max-width: 640px){
+    .tpw-carousel-light iframe{
+        height: 300px !important;
+    }
+}

@@ -1,4 +1,4 @@
-<div class="testimonial-container">
+<!-- <div class="testimonial-container">
   <div class="testimonial-slide" *ngFor="let t of testimonials; let i = Index;" [style.transform]="'translateX(' + (0 - 100*currentImage) + '%)'">
     <p>
       {{ t.text }}
@@ -18,4 +18,20 @@
 
 <div class="testimonial-switch-button testimonial-button-right" (click)="nextImage()">
   <img src="./assets/icons/arrow_right.png">
+</div> -->
+
+<!-- TrustBox widget - Carousel -->
+<div *ngIf="true" class="trustpilot-widget tpw-carousel-light" data-locale="de-DE" data-template-id="53aa8912dec7e10d38f59f36"
+  data-businessunit-id="5e9825574f392a0001029067" data-style-height="140px" data-style-width="100%" data-theme="light"
+  data-tags="Mainpage" data-stars="3,4,5" data-review-languages="de" data-text-color="#050505">
+  <a href="https://de.trustpilot.com/review/developerakademie.com" target="_blank" rel="noopener">Trustpilot</a>
 </div>
+<!-- End TrustBox widget -->
+
+<!-- TrustBox widget - Carousel -->
+<div *ngIf="false" class="trustpilot-widget tpw-carousel-dark" data-locale="de-DE" data-template-id="53aa8912dec7e10d38f59f36"
+  data-businessunit-id="5e9825574f392a0001029067" data-style-height="140px" data-style-width="100%" data-theme="dark"
+  data-tags="Mainpage" data-stars="3,4,5" data-review-languages="de" data-text-color="#FFFFFF">
+  <a href="https://de.trustpilot.com/review/developerakademie.com" target="_blank" rel="noopener">Trustpilot</a>
+</div>
+<!-- End TrustBox widget -->

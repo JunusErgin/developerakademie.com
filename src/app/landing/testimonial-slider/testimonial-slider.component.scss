@@ -1,18 +1,18 @@
-$mobile-height: 450px;
-:host {
-    position: relative;
-    height: 300px;
-    width: 80%;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    @media (max-width: 800px) {
-        height: $mobile-height;
-    }
-    @media (max-width: 1200px) {
-        width: 100%;
-    }
-}
+$mobile-height: unset;
+// :host {
+//     position: relative;
+//     height: 300px;
+//     width: 80%;
+//     display: flex;
+//     margin-left: auto;
+//     margin-right: auto;
+//     @media (max-width: 800px) {
+//         height: $mobile-height;
+//     }
+//     @media (max-width: 1200px) {
+//         width: 100%;
+//     }
+// }
 
 .testimonial-container {
     height: 300px;
@@ -103,6 +103,10 @@ $mobile-height: 450px;
 
 .testimonial-picture-mobile {
     display: none;
+}
+
+.tpw-carousel-dark{
+    background-color: #202c34;
 }
 
 @media(max-width: 800px) {
