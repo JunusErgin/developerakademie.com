@@ -70,7 +70,7 @@
       margin-left: auto;
     }
 
-    .linkContainerIE{
+    .linkContainerIE {
       display: inline-block;
       text-decoration: none;
       text-align: center;
@@ -96,7 +96,7 @@
       border: none;
     }
 
-    .browserNameIE{
+    .browserNameIE {
       display: inline-block;
     }
 
@@ -147,11 +147,9 @@
 
     function isSupported(browser) {
       var supported = false;
-      if (browser.name === "Chrome" && browser.version >= 48) {
-        supported = true;
-      } else if ((browser.name === "MSIE" || browser.name === "IE") && browser.version <= 11) {
+      if ((browser.name === "MSIE" || browser.name === "IE") && browser.version <= 11) {
         supported = false;
-      } else if (browser.name === "Edge") {
+      } else {
         supported = true;
       }
       return supported;
