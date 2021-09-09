@@ -16,7 +16,6 @@
     href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7COswald:400,700%7CDroid+Sans:400,700%7CRoboto:400,700%7CLato:400,700%7CPT+Sans:400,700%7CSource+Sans+Pro:400,600,700%7CNoto+Sans:400,700%7CPT+Sans:400,700%7CUbuntu:400,700%7CBitter:400,700%7CPT+Serif:400,700%7CRokkitt:400,700%7CDroid+Serif:400,700%7CRaleway:400,700%7CInconsolata:400,700"
     rel="stylesheet" type="text/css">
 
-
   <link rel="icon" type="image/x-icon" href="./assets/img/favicon-32x32.png">
 
   <!-- Cookie Bot Code -->
@@ -62,11 +61,172 @@
   <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
   <!-- End TrustBox script -->
 
+  <style>
+    .titleIE {
+      text-align: center;
+      padding: 20px 0;
+      max-width: 1000px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .linkContainerIE{
+      display: inline-block;
+      text-decoration: none;
+      text-align: center;
+      width: 200px;
+    }
+
+    .imgContainerIE {
+      max-width: 1000px;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+      display: -ms-flexbox;
+      justify-content: space-between;
+    }
+
+    .browserImgIE {
+      display: -ms-flexbox;
+      width: 80px;
+      height: 80px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      border: none;
+    }
+
+    .browserNameIE{
+      display: inline-block;
+    }
+
+    .footerIE {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      color: white;
+      background-color: black;
+      padding: 20px 60px;
+      left: 0px;
+      right: 0px;
+      max-width: calc(100% - 122px);
+
+    }
+  </style>
 
 </head>
 
 <body>
-  <app-root></app-root>
+  <!-- <app-root></app-root> -->
+
+  <script type="text/javascript">
+    function get_browser() {
+      var ua = navigator.userAgent, tem, M = ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+      if (/trident/i.test(M[1])) {
+        tem = /\brv[ :]+(\d+)/g.exec(ua) || [];
+        return { name: 'IE', version: (tem[1] || '') };
+      }
+      if (M[1] === 'Chrome') {
+        tem = ua.match(/\bOPR\/(\d+)/)
+        if (tem != null) { return { name: 'Opera', version: tem[1] }; }
+      }
+      if (window.navigator.userAgent.indexOf("Edge") > -1) {
+        tem = ua.match(/\Edge\/(\d+)/)
+        if (tem != null) { return { name: 'Edge', version: tem[1] }; }
+      }
+      M = M[2] ? [M[1], M[2]] : [navigator.appName, navigator.appVersion, '-?'];
+      if ((tem = ua.match(/version\/(\d+)/i)) != null) { M.splice(1, 1, tem[1]); }
+      return {
+        name: M[0],
+        version: +M[1]
+      };
+    }
+
+    var browser = get_browser()
+    var isSupported = isSupported(browser);
+
+    function isSupported(browser) {
+      var supported = false;
+      if (browser.name === "Chrome" && browser.version >= 48) {
+        supported = true;
+      } else if ((browser.name === "MSIE" || browser.name === "IE") && browser.version <= 11) {
+        supported = false;
+      } else if (browser.name === "Edge") {
+        supported = true;
+      }
+      return supported;
+    }
+
+    if (!isSupported) {
+      //render unsupported message
+
+      var browsersPaths = {
+        chrome: "./assets/icons/google-chrome-1326908_640.png",
+        safari: "./assets/icons/Safari_14_icon.png",
+        firefox: "./assets/icons/Firefox_logo,_2019.png",
+        opera: "./assets/icons/480px-Opera_2015_icon.svg.png",
+        edge: "./assets/icons/480px-Microsoft_Edge_logo_(2019).svg.png"
+      };
+
+      document.write(generateHTML());
+
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 70) {
+          document.getElementById("shopping-card").style.top = "0";
+        } else {
+          document.getElementById("shopping-card").style.top = "70px";
+        }
+      });
+
+      function generateHTML() {
+        return "<h1 class='titleIE'>Diese Internetseite kann nicht im Internet Explorer geöffnet werden. Bitte lade einen Webbrowser herunter, der moderne Sicherheitsstandard unterstützt.</h1>" +
+          "<div class='imgContainerIE'>" +
+          "<a class='linkContainerIE' href='https://www.google.de' target='_blank'>" +
+          "<img src='" + browsersPaths["chrome"] + "' class='browserImgIE' alt='Chrome'>" +
+          "<span class='browserNameIE'>Zum Chrome runterladen</span>" +
+          "</a>" +
+          "<a class='linkContainerIE' href='https://support.apple.com/downloads/safari' target='_blank'>" +
+          "<img src='" + browsersPaths["safari"] + "' class='browserImgIE' alt='Safari'>" +
+          "<span class='browserNameIE'>Zum Safari runterladen</span>" +
+          "</a>" +
+          "<a class='linkContainerIE' href='https://www.mozilla.org/de/firefox/new' target='_blank'>" +
+          "<img src='" + browsersPaths["firefox"] + "' class='browserImgIE' alt='Firefox'>" +
+          "<span class='browserNameIE'>Zum Firefox runterladen</span>" +
+          "</a>" +
+          "<a class='linkContainerIE' href='https://www.opera.com/de/computer' target='_blank'>" +
+          "<img src='" + browsersPaths["opera"] + "' class='browserImgIE' alt='Opera'>" +
+          "<span class='browserNameIE'>Zum Opera runterladen</span>" +
+          "</a>" +
+          "<a class='linkContainerIE' href='https://www.microsoft.com/de-de/edge' target='_blank'>" +
+          "<img src='" + browsersPaths["edge"] + "' class='browserImgIE' alt='Edge'>" +
+          "<span class='browserNameIE'>Zum Edge runterladen</span>" +
+          "</a>" +
+          "</div>" +
+          "<div class='footerIE'>" +
+          "<div class='imageSource'>" +
+          " Chrome Image by <a href='https://pixabay.com/users/wikimediaimages-1185597/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1326908'>WikimediaImages</a> from <a href='https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1326908'>Pixabay</a>" +
+          "</div>" +
+          "<div class='imageSource'>" +
+          "Safari By Apple Inc. - Operating system on own computer, <a href='//en.wikipedia.org/wiki/File:Safari_14_icon.png' title='Fair use of copyrighted material in the context of Safari (web browser)'>Fair use</a>, <a href='https://en.wikipedia.org/w/index.php?curid=66134564'>Link</a>" +
+          "</div>" +
+          "<div class='imageSource'>" +
+          "By Mozilla Corporation - <a rel='nofollow' class='external free' href='https://phabricator.services.mozilla.com/D41016'>https://phabricator.services.mozilla.com/D41016</a>, <a href='https://www.mozilla.org/en-US/MPL/2.0/' title='Mozilla Public License Version 2'>MPL 2</a>, <a href='https://commons.wikimedia.org/w/index.php?curid=81490422'>Link</a>" +
+          "</div>" +
+          "<div class='imageSource'>" +
+          "By Opera - <a rel='nofollow' class='external free' href='https://brand.opera.com/'>https://brand.opera.com/</a>, Public Domain, <a href='https://commons.wikimedia.org/w/index.php?curid=43529820'>Link</a>" +
+          "</div>" +
+          "<div class='imageSource'>" +
+          "By Microsoft Corporation - <a rel='nofollow' class='external free' href='https://static.wikia.nocookie.net/logopedia/images/4/4d/Microsoft_Edge_%282019%29.svg/revision/latest?cb=20210706013511'>https://static.wikia.nocookie.net/logopedia/images/4/4d/Microsoft_Edge_%282019%29.svg/revision/latest?cb=20210706013511</a>, <a href='http://opensource.org/licenses/mit-license.php' title='MIT license'>MIT</a>, <a href='https://commons.wikimedia.org/w/index.php?curid=109226686'>Link</a>" +
+          "</div>" +
+          "</div>";
+      }
+    }
+    else {
+      //render app
+      var elem = document.createElement("app-root");
+      document.body.appendChild(elem);
+    }
+  </script>
 
   <script type="text/javascript" src="https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"
     async></script>
