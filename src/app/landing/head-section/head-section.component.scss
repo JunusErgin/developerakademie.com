@@ -1,3 +1,5 @@
+@import './../../../constants';
+
 .head-section {
     padding-top: 80px;
     padding-bottom: 8px;
@@ -6,63 +8,65 @@
 
 .head-left {
     width: 60%;
-    p {
-        font-size: 16px;
-    }
 }
 
 .btn-outline {
     display: inline-block;
 }
 
+// .btn{
+//     width: fit-content;
+// }
+
 .head-right {
     width: 40%;
     img {
-        width: 180%;
+        width: 150%;
     }
 }
 
-.trustpilot-image {
-    height: 58px;
+.landing-p {
+    padding-right: 80px;
+    @media (max-width: $smallScreen) {
+        padding-right: 0;
+    }
 }
 
-.tpw-top{
-    width: fit-content;
-    max-width: 190px;
-    // margin-left: -20px;
-    margin-top: 16px !important;
-}
-.tp-tuev-container{
+.tp-tuev-container {
     display: flex;
     align-items: center;
-}
-
-.tuev{
-    max-width: 150px;
-    max-height: 120px;
-    object-fit: contain;
-    margin: auto;
-    margin-left: 50px !important;
-}
-
-.btn{
-    width: fit-content;
-}
-
-
-@media (max-width: 800px) {
-    .head-left {
-        width: 100%;
+    .tpw-top {
+        width: fit-content;
+        max-width: 190px;
     }
-    .head-right {
-        display: none;
+
+    .tuev {
+        max-width: 150px;
+        max-height: 120px;
+        object-fit: contain;
+        margin: auto;
+        margin-left: 50px !important;
     }
-    .round-row {
-        flex-direction: column;
-        align-items: center;
-        padding-top: 200px;
-        height: unset !important;
-        background-size: 200% 100% !important;
+
+    @media (max-width: $smallScreen) {
+        justify-content: center;
+        .tpw-top {
+            width: unset;
+            margin-left: auto;
+        }
+    }
+
+    @media (max-width: $verySmallScreen) {
+        .tpw-top {
+            width: 50%;
+            height: 108px;
+        }
+
+        .tuev{
+            margin-left: auto !important;
+            width: 50%;
+            height: 108px;
+        }
     }
 }
 
@@ -81,28 +85,36 @@
         align-items: center;
         justify-content: flex-end;
         padding-bottom: 18px;
-        color: rgba(142, 152, 156);
+        
         img {
             width: 60px;
         }
         span {
-            font-weight: 600;
             margin-top: 8px;
-            font-size: 14px;
+            font-weight: 700 !important;
+            color: rgba(142, 152, 156) !important;
         }
     }
 }
 
-@media (max-width: 450px){
+@media (max-width: $smallScreen) {
+    .head-left {
+        width: 100%;
+    }
+    .head-right {
+        display: none;
+    }
+    .round-row {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 200px;
+        height: unset !important;
+        background-size: 200% 100% !important;
+    }
+}
+
+@media (max-width: $verySmallScreen){
     .head-section{
         padding-top: 100px;
-    }
-
-    .tp-tuev-container{
-        flex-direction: column;
-        align-items: flex-start;
-        .tuev{
-            margin-left: unset !important;
-        }
     }
 }

@@ -1,8 +1,12 @@
-<header class="padding-left-right">
-    <a routerLink="/" title="Zurück zur Hauptseite"><img src="./assets/img/logo_text_black.png"></a>
+<header class="container">
+    <a routerLink="/" title="Zurück zur Hauptseite">
+        <img class="logo" src="./assets/img/logo.png">
+    </a>
 
     <nav>
-        <a href="https://developer-akademie.teachable.com/" class="hide-mobile" target="_blank">Login</a>
-        <a href="https://weiterbildung.developerakademie.com/termin" class="btn hide-mobile">Jetzt bewerben</a>
-        <a *ngIf="windowSize.minWidth(450)" href="https://weiterbildung.developerakademie.com/termin" class="btn hide-desktop">Bewerben</a>
+        <a  href="https://developer-akademie.teachable.com/" class="hide-mobile menuText" target="_blank">Login</a>
+        <a  href="https://weiterbildung.developerakademie.com/termin" class="btn hide-mobile menuText">Jetzt bewerben</a>
+        <a *ngIf="windowSize.minWidth(450)" href="https://weiterbildung.developerakademie.com/termin"
+            class="btn hide-desktop menuText">Bewerben</a>
     </nav>
+</header>

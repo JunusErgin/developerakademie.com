@@ -1,38 +1,28 @@
+@import "constants";
+
+/* Global Tags */
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
-    font-family: "Open Sans", Helvetica, sans-serif;
-    //color: #4d4c4c;
     color: black;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px;
-}
-
-header img {
-    width: 200px;
+    @media (max-width: $smallScreen) {
+        text-align: center;
+    }
 }
 
 a {
     text-decoration: none !important;
 }
 
-nav a {
-    color: black;
-    text-decoration: none;
-    margin-left: 32px;
-    font-weight: 600;
-}
-
-nav a:hover {
-    text-decoration: underline;
+a.anchor {
+    display: block;
+    position: relative;
+    top: -80px;
+    visibility: hidden;
 }
 
 ul {
@@ -50,18 +40,134 @@ li {
     font-weight: 500;
 }
 
-a.anchor {
-    display: block;
-    position: relative;
-    top: -80px;
-    visibility: hidden;
+/* Backgrounds */
+.bg-dark {
+    background-color: #4c535e;
 }
+
+.bg-gray {
+    background-color: #fffcfc;
+}
+
+/* Containers */
+
+.container {
+    //top-bottom left-right
+    padding: 55px 64px;
+
+    @media (min-width: $smallScreen) {
+        .card-body{
+            padding: 0 80px;
+        }
+    }
+
+    @media (min-width: $bigScreen) {
+        padding: 55px 128px;
+        .card-body{
+            padding: 0 180px;
+        }
+    }
+
+    @media (min-width: 1400px) {
+        padding: 55px 192px;
+    }
+
+    @media (min-width: 1600px) {
+        padding: 55px 256px;
+    }
+
+    @media (min-width: 1800px) {
+        padding: 55px 320px;
+    }
+
+    @media (max-width: $smallScreen) {
+        padding: 16px 20px;
+    }
+
+    @media (max-width: $verySmallScreen) {
+        padding: 6px 6px;
+    }
+}
+
+/* Button */
+.btn {
+    background-color: $primaryColor_bright;
+    color: white !important;
+    box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.22);
+    border-radius: 6px;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.13);
+    padding: 16px 32px;
+    font-weight: 700 !important;
+    &:hover {
+        background-color: $primaryColor_bright--hover;
+        text-decoration: none !important;
+    }
+}
+
+.btn-outline {
+    border: 2px solid $primaryColor_bright;
+    border-radius: 4px;
+    padding: 8px 16px;
+    color: $primaryColor_bright !important;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 700 !important;
+    margin-bottom: 10px;
+    &:hover {
+        background-color: rgba($primaryColor_bright, 0.1);
+    }
+}
+
+/* Logos and Images */
+.logo {
+    min-width: 15mm;
+}
+
+/* Flex */
+.v-center {
+    display: flex;
+    align-items: center;
+}
+
+.h-center {
+    display: flex !important;
+    justify-content: center;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.space-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Padding */
 
 .padding-left-right {
     padding-left: 320px;
     padding-right: 320px;
 }
 
+.padding-bottom-top {
+    padding-bottom: 32px !important;
+    padding-top: 32px !important;
+}
+
+.pr-m {
+    padding-right: 16px;
+}
+.pr-xl {
+    padding-right: 80px;
+}
+
+.pl-m {
+    padding-left: 16px;
+}
+
+/* Margin */
 .margin-bottom-40 {
     margin-bottom: 40px;
 }
@@ -78,48 +184,144 @@ a.anchor {
     margin-top: 120px !important;
 }
 
-.width-60 {
-    width: 60%;
+.mt-custom {
+    margin-top: 55px !important;
 }
 
-.btn {
-    background-color: #fd7065;
-    padding: 12px 32px;
-    border-radius: 6px;
+.mb-custom {
+    margin-bottom: 55px !important;
+}
+
+.mt-l {
+    margin-top: 55px !important;
+}
+
+.mt-m {
+    margin-top: 32px !important;
+}
+
+.mt-s {
+    margin-top: 16px !important;
+}
+
+.mb-s {
+    margin-bottom: 16px !important;
+}
+
+.ml-a {
+    margin-left: auto !important;
+}
+
+.mt-a {
+    margin-top: auto !important;
+}
+
+/* Text */
+.letter-spacing-1 {
+    letter-spacing: 1px;
+}
+
+.text-left {
+    text-align: start !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-right {
+    text-align: end !important;
+}
+
+.text-white {
     color: white !important;
-    font-size: 14px;
-    text-decoration: none;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
 }
 
-.btn:hover {
-    background-color: #fc8880;
-}
-
-.btn-outline {
-    border: 2px solid #fd7065;
-    border-radius: 4px;
-    padding: 8px 16px;
-    color: #fd7065;
-    text-decoration: none;
-    cursor: pointer;
-    font-weight: bold;
-    margin-bottom: 10px;
-    &:hover {
-        background-color: rgba(#fd7065, 0.1);
+.captionText {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: $textColor_bright;
+    @media (max-width: $verySmallScreen) {
+        font-size: 10px;
     }
 }
 
-.text-red {
-    color: #fd7065;
+.bodyText {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: $textColor_dim;
+    @media (max-width: $verySmallScreen) {
+        font-size: 12px;
+    }
 }
 
-.text-gray {
-    color: rgb(89, 95, 104);
+.menuText {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: $textColor_dim;
+    @media (max-width: $verySmallScreen) {
+        font-size: 12px;
+    }
 }
 
+.headLineText {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: $textColor_bright;
+    @media (max-width: $verySmallScreen) {
+        font-size: 16px;
+    }
+}
+
+.subtitleText {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: $primaryColor_bright;
+    @media (max-width: $verySmallScreen) {
+        font-size: 18px;
+    }
+}
+
+.titleText--2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: $primaryColor_bright;
+    @media (max-width: $verySmallScreen) {
+        font-size: 20px;
+    }
+}
+
+.titleText--1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: $textColor_dim;
+    @media (max-width: $verySmallScreen) {
+        font-size: 24px;
+    }
+}
+
+.headText {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: $textColor_dim;
+    b {
+        color: $primaryColor_bright;
+        font-weight: 700;
+    }
+    @media (max-width: $verySmallScreen) {
+        font-size: 30px;
+    }
+}
+
+/* Custom Table */
 .atf {
     display: table;
 }
@@ -128,72 +330,16 @@ a.anchor {
     width: 50%;
 }
 
+/* Shapes */
 
-/* Neu */
+/* Screen */
 
-h1 {
-    font-family: "Open Sans", Helvetica, sans-serif;
-    font-weight: 500;
-    font-size: 38px;
-}
-
-h2 {
-    font-family: "Open Sans", Helvetica, sans-serif;
-    font-weight: 500;
-    font-size: 30px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-
-h3 {
-    font-family: "Open Sans", Helvetica, sans-serif;
-    font-weight: 500;
-    font-size: 24px;
-}
-
-.subtitle {
-    font-size: 22px;
-}
-
-.bg-gray {
-    background-color: #fffcfc;
+.width-60 {
+    width: 60%;
 }
 
 .hidden {
     display: none !important;
-}
-
-.padding-bottom-top {
-    padding-bottom: 32px !important;
-    padding-top: 32px !important;
-}
-
-.roboto-medium {
-    font-family: 'Roboto', sans-serif;
-}
-
-.v-center {
-    display: flex;
-    align-items: center;
-}
-
-.h-center {
-    display: flex !important;
-    justify-content: center;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.space-between {
-    display: flex;
-    justify-content: space-between;
-}
-
-.space-around {
-    display: flex;
-    justify-content: space-around;
 }
 
 .columns-2 {
@@ -219,7 +365,7 @@ h3 {
     padding-left: 8px;
     padding-right: 8px;
     color: white;
-    background-color: #fd7065;
+    background-color: $primaryColor_bright;
 }
 
 .remove-paragraph-margin {
@@ -253,16 +399,16 @@ h3 {
 }
 
 @media(max-width: 1400px) {
-    h1 {
-        font-size: 34px;
-    }
+    // h1 {
+    //     font-size: 34px;
+    // }
     .padding-left-right {
         padding-left: 120px;
         padding-right: 120px;
     }
 }
 
-@media(max-width: 850px) {
+@media(max-width: $smallScreen) {
     .padding-left-right {
         padding-left: 50px;
         padding-right: 50px;
@@ -281,9 +427,11 @@ h3 {
             ;
         }
     }
+
     .hide-desktop {
         display: block !important;
     }
+
     .center-mobile {
         display: flex !important;
         justify-content: center;

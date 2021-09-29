@@ -1,37 +1,43 @@
-:host {
-  header {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    height: 48px;
-    background-color: white;
+@import "./../../constants";
+
+header {
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+
+  nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    z-index: 5;
-
-    img {
-      width: 160px;
+    a {
+      margin-left: 24px;
     }
+  }
 
-    nav {
-      display: flex;
-      align-items: center;
-
-    }
-
+  img {
+    width: 200px;
   }
 }
 
-// @media (max-width: 450px){
-//   :host{
-//     header{
-//       flex-direction: column;
-//       height: unset;
-//       nav a{
-//         margin-left: 0;
-//       }
-//     }
-//   }
-// }
+@media (max-width: $smallScreen) {
+  header {
+    display: flex;
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: $verySmallScreen) {
+  header {
+    img {
+      width: 150px !important;
+    }
+  }
+}
