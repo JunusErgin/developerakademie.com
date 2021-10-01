@@ -19,9 +19,12 @@
 // }
 
 .head-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 40%;
     img {
-        width: 150%;
+        width: 140%;
     }
 }
 

@@ -2,9 +2,11 @@
   position: relative;
   display: block;
 
+  min-height: 340px;
+
   img {
     position: absolute;
-    right: 15vw;
+    right: 10vw;
     width: 40vw;
     top: 0;
     max-width: 500px;
@@ -16,5 +18,9 @@
     @media(max-width: 850px) {
       max-width: 100%;
     }
+  }
+
+  @media(max-width: 850px){
+    min-height: unset;
   }
 }
