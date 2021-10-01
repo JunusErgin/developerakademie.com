@@ -1,3 +1,5 @@
+@import './../../../constants';
+
 :host {
     display: flex;
     flex-direction: column;
@@ -14,7 +16,7 @@
     .card-content {
         padding: 16px;
         text-align: left;
-        b {
+        span {
             text-align: center !important;
             display: flex;
             justify-content: center;
@@ -23,12 +25,12 @@
     }
 }
 
-.card-text {
-    color: rgb(91, 97, 106);
-    font-size: 14px;
-}
+// .card-text {
+//     color: rgb(91, 97, 106);
+//     font-size: 14px;
+// }
 
-@media(max-width: 850px) {
+@media(max-width: $smallScreen) {
      :host {
         margin-bottom: 32px;
         border-radius: 24px;

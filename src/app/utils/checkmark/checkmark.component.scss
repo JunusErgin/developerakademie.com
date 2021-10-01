@@ -1,3 +1,5 @@
+@import './../../../constants';
+
 :host {
     display: flex;
     align-items: center;
@@ -5,7 +7,7 @@
 }
 
 .checkmark {
-    background-color: #fd7065;
+    background-color: $primaryColor_bright;
     border-radius: 100%;
     padding: 4px;
     display: inline-flex;

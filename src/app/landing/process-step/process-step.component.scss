@@ -1,6 +1,8 @@
+@import './../../../constants';
+
 .number {
     border-radius: 100%;
-    background-color: #fd7065;
+    background-color: $primaryColor_bright;
     padding: 28px;
     display: flex;
     justify-content: center;
@@ -8,8 +10,6 @@
     width: 0;
     height: 0;
     color: white;
-    font-size: 32px;
-    font-weight: 600;
 }
 
 .process-explaination {
@@ -18,12 +18,5 @@
     margin-bottom: 32px;
     div {
         margin-left: 32px;
-        span {
-            font-size: 24px;
-            font-weight: 600;
-        }
-        p {
-            font-size: 14px;
-        }
     }
 }

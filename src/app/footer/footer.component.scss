@@ -1,9 +1,11 @@
+@import './../../constants';
+
 .footer {
     background-color: #192D35;
     min-height: 300px;
     color: white;
     display: flex;
-    @media(max-width: 900px) {
+    @media(max-width: $smallScreen) {
         flex-direction: column;
         align-items: center;
     }
@@ -14,7 +16,7 @@
     margin-right: 64px;
     display: flex;
     flex-direction: column;
-    @media(max-width: 900px) {
+    @media(max-width: $smallScreen) {
         margin-right: 0;
         text-align: center;
         align-items: center;
@@ -25,15 +27,16 @@
         margin-bottom: 48px;
     }
     span {
-        font-size: 20px;
+        // font-size: 20px;
+        color: white !important;
         margin-bottom: 32px;
         text-transform: uppercase;
     }
     a {
-        color: white;
+        color: white !important;
         text-decoration: none;
         margin-bottom: 16px;
-        font-size: 14px;
+        // font-size: 14px;
         &:hover {
             color: #D8D8D8;
         }
@@ -42,23 +45,24 @@
 
 .footer-text {
     text-transform: unset !important;
-    font-size: 14px !important;
+    // font-size: 14px !important;
 }
 
 .footer-container-last {
     margin-left: auto !important;
     margin-right: 0 !important;
-    @media(max-width: 900px) {
+    @media(max-width: $smallScreen) {
         margin-left: 0 !important;
     }
 }
 
 .footer-copyright {
     background-color: #192D35;
-    color: white;
+    color: white !important;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
+    // font-size: 14px;
     min-height: 64px;
+    text-align: center;
 }

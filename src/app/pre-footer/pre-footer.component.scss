@@ -1,3 +1,5 @@
+@import './../../constants';
+
 :host {
     min-height: 200px;
     display: flex;
@@ -8,7 +10,7 @@
         align-items: center;
         padding-top: 100px;
     }
-    @media (max-width: 800px) {
+    @media (max-width: $smallScreen) {
         background-color: #F7F9FC;
     }
 }
@@ -20,12 +22,11 @@
 
 .subtitle {
     padding-bottom: 16px;
-    @media(max-width: 850px) {
-        font-size: 16px;
-    }
+    font-weight: 400 !important;
+    color: black;
 }
 
-@media(max-width: 850px) {
+@media(max-width: $smallScreen) {
     .prefooter {
         flex-direction: column;
     }

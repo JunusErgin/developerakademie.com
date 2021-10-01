@@ -9,9 +9,9 @@ html {
 body {
     margin: 0;
     color: black;
-    @media (max-width: $smallScreen) {
-        text-align: center;
-    }
+    // @media (max-width: $smallScreen) {
+    //     text-align: center;
+    // }
 }
 
 a {
@@ -243,7 +243,7 @@ li {
     font-size: 12px;
     color: $textColor_bright;
     @media (max-width: $verySmallScreen) {
-        font-size: 10px;
+        font-size: 12px;
     }
 }
 
@@ -253,7 +253,7 @@ li {
     font-size: 16px;
     color: $textColor_dim;
     @media (max-width: $verySmallScreen) {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
@@ -263,7 +263,7 @@ li {
     font-size: 16px;
     color: $textColor_dim;
     @media (max-width: $verySmallScreen) {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
@@ -293,7 +293,7 @@ li {
     font-size: 24px;
     color: $primaryColor_bright;
     @media (max-width: $verySmallScreen) {
-        font-size: 20px;
+        font-size: 22px;
     }
 }
 
@@ -303,7 +303,7 @@ li {
     font-size: 30px;
     color: $textColor_dim;
     @media (max-width: $verySmallScreen) {
-        font-size: 24px;
+        font-size: 28px;
     }
 }
 
