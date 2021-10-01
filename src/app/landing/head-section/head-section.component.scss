@@ -16,9 +16,12 @@
 }
 
 .head-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 40%;
     img {
-        width: 180%;
+        width: 140%;
     }
 }
 
