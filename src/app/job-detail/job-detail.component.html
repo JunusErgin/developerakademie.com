@@ -1,41 +1,45 @@
-<div class="padding-left-right margin-top-120">
+<div class="container margin-top-120">
   <div>
-    <h2>Stellenausschreibungen > {{ job['title'] }} · {{ job['fulltime'] }} (m/w/d)</h2>
+    <h2 class="titleText--1">Stellenausschreibungen > {{ job['title'] }} · {{ job['fulltime'] }} (m/w/d)</h2>
   </div>
 
 
   <div class="job-detail">
     <div class="job-left">
-      <p>
-        Die Developer Akademie ist eine <b>Online-Software-Bootcamp</b>, die Quereinsteiger innerhalb von 3-12 Monaten zu <b>Softwareentwicklern</b> qualifiziert. Wir betreuen unsere Kunden von der ersten Zeile Code bis zum Einstieg <b>in den ersten IT-Job</b>. Unsere Mission ist Menschen aller Fachrichtungen die Chance zu geben, erfolgreich eine zweite Karriere in der IT zu starten. Als Startup suchen wir nach motivierten Menschen, die uns dabei helfen diese Mission zu erfüllen.
+      <p class="headLineText">
+        Die Developer Akademie ist eine <b>Online-Software-Bootcamp</b>, die Quereinsteiger innerhalb von 3-12 Monaten
+        zu <b>Softwareentwicklern</b> qualifiziert. Wir betreuen unsere Kunden von der ersten Zeile Code bis zum
+        Einstieg <b>in den ersten IT-Job</b>. Unsere Mission ist Menschen aller Fachrichtungen die Chance zu geben,
+        erfolgreich eine zweite Karriere in der IT zu starten. Als Startup suchen wir nach motivierten Menschen, die uns
+        dabei helfen diese Mission zu erfüllen.
       </p>
-      
-      <p>{{ job['description'] }}</p>
 
-      <h3>Deine Aufgaben</h3>
-      <ul *ngIf="job['normal_day']">
+      <p class="headLineText">{{ job['description'] }}</p>
+
+      <h3 class="subtitleText">Deine Aufgaben</h3>
+      <ul class="bodyText" *ngIf="job['normal_day']">
         <li *ngFor="let req of job.normal_day">{{ req }}</li>
       </ul>
 
-      <h3>Das solltest du mitbringen</h3>
-      <ul *ngIf="job['requirements']">
+      <h3 class="subtitleText">Das solltest du mitbringen</h3>
+      <ul class="bodyText" *ngIf="job['requirements']">
         <li *ngFor="let req of job.requirements">{{ req }}</li>
       </ul>
 
 
-      <h3 *ngIf="job['optional_requirements'].length > 0">Optional</h3>
-      <ul *ngIf="job['optional_requirements']">
+      <h3 class="subtitleText" *ngIf="job['optional_requirements'].length > 0">Optional</h3>
+      <ul class="bodyText" *ngIf="job['optional_requirements']">
         <li *ngFor="let req of job.optional_requirements">{{ req }}</li>
       </ul>
 
-      <h3 *ngIf="job['offers'].length > 0">Was wir dir bieten</h3>
-      <ul *ngIf="job['optional_requirements']">
+      <h3 class="subtitleText" *ngIf="job['offers'].length > 0">Was wir dir bieten</h3>
+      <ul class="bodyText" *ngIf="job['optional_requirements']">
         <li *ngFor="let req of job.offers">{{ req }}</li>
       </ul>
 
     </div>
     <div class="job-right">
-      <button (click)="apply()" class="btn-outline">Jetzt bewerben</button>
+      <button (click)="apply()" class="btn-outline menuText">Jetzt bewerben</button>
 
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2662.921434521229!2d11.58563011515113!3d48.13103847922287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479ddf7d1db02a99%3A0x9435806ea0dcc0b4!2sLilienstra%C3%9Fe%203-5%2C%2081669%20M%C3%BCnchen!5e0!3m2!1sde!2sde!4v1602509958510!5m2!1sde!2sde"

@@ -1,3 +1,5 @@
+@import './../../../constants';
+
 :host {
     display: flex;
     align-items: center;
@@ -9,7 +11,6 @@
     width: 450px;
     justify-content: center;
     position: relative;
-    font-weight: 700;
     div {
         padding: 8px 0px;
         width: 150px;
@@ -27,13 +28,9 @@
     width: 150px;
     height: 100%;
     z-index: -1;
-    background-color: #fd7065;
+    background-color: $primaryColor_bright;
     border-radius: 4px;
     transition: all 225ms ease-in-out;
-}
-
-.color-white {
-    color: white !important;
 }
 
 .switch-slides {
@@ -56,8 +53,16 @@
     }
 }
 
-.switch-highlight {
-    color: #EF9E97;
+.switch-highlight--1 {
+    color: #CF93B4;
+}
+
+.switch-highlight--2 {
+    color: #FFC4C6;
+}
+
+.switch-highlight--3 {
+    color: #E79BC1;
 }
 
 .background-container {
@@ -67,7 +72,7 @@
     }
 }
 
-@media(max-width: 850px) {
+@media(max-width: $smallScreen) {
     .switch-section {
         display: flex;
         width: 300px;
@@ -83,7 +88,7 @@
     }
 }
 
-@media(min-width: 1200px) {
+@media(min-width: $bigScreen) {
     .bigscreenmargin {
         margin-top: 16px;
     }

@@ -32,10 +32,10 @@ ul {
 
 li {
     margin-bottom: 16px;
-    color: rgb(89, 95, 104);
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    // color: rgb(89, 95, 104);
+    // font-size: 14px;
+    // font-family: 'Roboto', sans-serif;
+    // font-weight: 500;
 }
 
 /* Backgrounds */
@@ -218,6 +218,10 @@ li {
     letter-spacing: 1px;
 }
 
+.color-white {
+    color: white !important;
+}
+
 .text-left {
     text-align: start !important;
 }
@@ -372,98 +376,6 @@ li {
 
 .hide-desktop {
     display: none !important;
-}
-
-.li {
-    color: #595f68;
-    font-size: 14px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500
-}
-
-/* Text */
-.captionText {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    color: $textColor_bright;
-    // @media (max-width: $verySmallScreen) {
-    //     font-size: 10px;
-    // }
-}
-
-.bodyText {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: $textColor_dim;
-    // @media (max-width: $verySmallScreen) {
-    //     font-size: 12px;
-    // }
-}
-
-.menuText {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: $textColor_dim;
-    // @media (max-width: $verySmallScreen) {
-    //     font-size: 12px;
-    // }
-}
-
-.headLineText {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    color: $textColor_bright;
-    // @media (max-width: $verySmallScreen) {
-    //     font-size: 16px;
-    // }
-}
-
-.subtitleText {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    color: $primaryColor_bright;
-    // @media (max-width: $verySmallScreen) {
-    //     font-size: 18px;
-    // }
-}
-
-.titleText--2 {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    color: $primaryColor_bright;
-    // @media (max-width: $verySmallScreen) {
-    //     font-size: 20px;
-    // }
-}
-
-.titleText--1 {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 30px;
-    color: $textColor_dim;
-    // @media (max-width: $verySmallScreen) {
-    //     font-size: 24px;
-    // }
-}
-
-.headText {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 36px;
-    color: $textColor_dim;
-    b {
-        color: $primaryColor_bright;
-        font-weight: 700;
-    }
-    // @media (max-width: $verySmallScreen) {
-    //     font-size: 30px;
-    // }
 }
 
 /* Media Queries */

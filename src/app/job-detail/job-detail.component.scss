@@ -1,40 +1,54 @@
+@import './../../constants';
+
 .job-detail {
   display: flex;
-
   h2 {
       padding-bottom: 0;
   }
 
-}
-
-.job-left {
-  width: 70%;
-}
-
-.job-right {
-  width: 30%;
-  padding-left: 64px;
-
-  button {
-      width: 100%;
-      margin-bottom: 32px;
+  .job-left {
+    width: 70%;
+  }
+  
+  .job-right {
+    width: 30%;
+    padding-left: 64px;
+  
+    button {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+  
+    iframe {
+        width: 100%;
+    }
   }
 
-  iframe {
-      width: 100%;
+  @media(max-width: $smallScreen){
+      flex-direction: column;
+      .job-right{
+        padding-left: 0;
+        padding-top: 64px;
+        width: unset;
+        iframe{
+          height: 300px;
+        }
+        button{
+          width: unset;
+        }
+      }
+
+      .job-left{
+        width: unset;
+       
+      }
   }
+
 }
 
 ul{
   list-style: unset;
   margin-left: 20px;
-  // padding-inline-start: 40px;
-}
-
-li{
-  font-family: inherit;
-  color: unset;
-  font-size: unset;
 }
 
 h3{
