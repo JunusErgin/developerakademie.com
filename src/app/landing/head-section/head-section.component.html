@@ -1,4 +1,4 @@
-<app-section>
+<app-section [padding]="true">
     <div class="head-section">
 
         <div class="head-left">
@@ -26,7 +26,7 @@
             <div class="margin-top-16">
                 <a *ngIf="!windowSize.maxWidth(450)" class="btn-outline menuText" target="blank" href="https://weiterbildung.developerakademie.com">Weiterbildung
                     Web-Programmierer</a>
-                <a *ngIf="windowSize.maxWidth(450)" href="https://weiterbildung.developerakademie.com/termin" class="btn">Bewerben</a>
+                <a *ngIf="windowSize.maxWidth(450)" href="https://weiterbildung.developerakademie.com/termin" class="btn menuText">Bewerben</a>
             </div>
         </div>
 
