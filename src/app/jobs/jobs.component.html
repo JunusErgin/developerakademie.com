@@ -1,5 +1,5 @@
 <div class="bg-gray jobs padding-left-right">
-  <h2>Aktuell <b class="text-red">offene Positionen</b></h2>
+  <h2 class="titleText--2">Aktuell <b class="text-red">offene Positionen</b></h2>
 
   <h3>Engineering</h3>
   <app-job-description *ngFor="let job of jobService.getJobs('Engineering')" [job]="job"></app-job-description>

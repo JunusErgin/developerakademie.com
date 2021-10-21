@@ -16,9 +16,12 @@
 }
 
 .head-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 40%;
     img {
-        width: 180%;
+        width: 140%;
     }
 }
 
@@ -31,6 +34,22 @@
     max-width: 190px;
     // margin-left: -20px;
     margin-top: 16px !important;
+}
+.tp-tuev-container{
+    display: flex;
+    align-items: center;
+}
+
+.tuev{
+    max-width: 150px;
+    max-height: 120px;
+    object-fit: contain;
+    margin: auto;
+    margin-left: 50px !important;
+}
+
+.btn{
+    width: fit-content;
 }
 
 
@@ -80,5 +99,13 @@
 @media (max-width: 450px){
     .head-section{
         padding-top: 100px;
+    }
+
+    .tp-tuev-container{
+        flex-direction: column;
+        align-items: flex-start;
+        .tuev{
+            margin-left: unset !important;
+        }
     }
 }

@@ -4,5 +4,5 @@
     <nav>
         <a href="https://developer-akademie.teachable.com/" class="hide-mobile" target="_blank">Login</a>
         <a href="https://weiterbildung.developerakademie.com/termin" class="btn hide-mobile">Jetzt bewerben</a>
-        <a href="https://weiterbildung.developerakademie.com/termin" class="btn hide-desktop">Bewerben</a>
+        <a *ngIf="windowSize.minWidth(450)" href="https://weiterbildung.developerakademie.com/termin" class="btn hide-desktop">Bewerben</a>
     </nav>

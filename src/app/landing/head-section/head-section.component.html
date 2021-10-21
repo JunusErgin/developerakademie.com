@@ -17,26 +17,35 @@
                 </a>
             </div> -->
 
-            <!-- TrustBox widget - Mini -->
-            <div class="trustpilot-widget tpw-top" data-locale="de-DE" data-template-id="53aa8807dec7e10d38f59f32"
-                data-businessunit-id="5e9825574f392a0001029067" data-style-height="150px" data-style-width="100%"
-                data-theme="light" data-text-color="#050505">
-                <a href="https://de.trustpilot.com/review/developerakademie.com" target="_blank"
-                    rel="noopener">Trustpilot</a>
+            <div class="tp-tuev-container">
+                <!-- TrustBox widget - Mini -->
+                <div class="trustpilot-widget tpw-top" data-locale="de-DE" data-template-id="53aa8807dec7e10d38f59f32"
+                    data-businessunit-id="5e9825574f392a0001029067" data-style-height="120px" data-style-width="100%"
+                    data-theme="light" data-text-color="#050505">
+                    <a href="https://de.trustpilot.com/review/developerakademie.com" target="_blank"
+                        rel="noopener">Trustpilot</a>
+                </div>
+                <!-- End TrustBox widget -->
+
+                <a class="tuev-link" href="https://m.certipedia.com/certificates/01%20600%202000730?locale=de" target="blank">
+                    <img class="tuev" src="./assets/img/TR-Testmark_9000012503_DE_CMYK_without-QR-Code.png" alt="">
+                </a>
             </div>
-            <!-- End TrustBox widget -->
-  
+
+
+
 
 
 
             <div class="margin-top-16">
-                <a class="btn-outline" target="blank" href="https://weiterbildung.developerakademie.com">Weiterbildung
+                <a *ngIf="!windowSize.maxWidth(450)" class="btn-outline" target="blank" href="https://weiterbildung.developerakademie.com">Weiterbildung
                     Web-Programmierer</a>
+                <a *ngIf="windowSize.maxWidth(450)" href="https://weiterbildung.developerakademie.com/termin" class="btn">Bewerben</a>
             </div>
         </div>
 
         <div class="head-right">
-            <img src="assets/img/team2-min.png">
+            <img src="./assets/img/03_Photo_2.png">
         </div>
     </div>
 </app-section>

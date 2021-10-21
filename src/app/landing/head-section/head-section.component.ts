@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { WindowSizeService } from 'src/app/window-size.service';
 
 @Component({
   selector: 'app-head-section',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeadSectionComponent implements OnInit {
 
-  constructor() { }
+  constructor(public windowSize: WindowSizeService) { }
 
   ngOnInit(): void {
+    
   }
 
 }

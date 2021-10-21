@@ -24,14 +24,14 @@
   }
 }
 
-@media (max-width: 450px){
-  :host{
-    header{
-      flex-direction: column;
-      height: unset;
-      nav a{
-        margin-left: 0;
-      }
-    }
-  }
-}
+// @media (max-width: 450px){
+//   :host{
+//     header{
+//       flex-direction: column;
+//       height: unset;
+//       nav a{
+//         margin-left: 0;
+//       }
+//     }
+//   }
+// }
