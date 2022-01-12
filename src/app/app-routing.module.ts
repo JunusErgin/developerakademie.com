@@ -17,10 +17,10 @@ const routes: Routes = [{
 }, {
   component: LandingComponent,
   path: ''
-}, {
+}, /*{
   component: JobsLandingComponent,
   path: 'karriere'
-}, {
+},*/ {
   component: DatenschutzComponent,
   path: 'data-protection'
 }, {
