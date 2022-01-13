@@ -28,6 +28,7 @@ import { AgbComponent } from './legal/agb/agb.component';
 import { WiderrufComponent } from './legal/widerruf/widerruf.component';
 import { CookieComponent } from './legal/cookie/cookie.component';
 import { ImprintComponent } from './legal/imprint/imprint.component';
+import { JobsLandingExternComponent } from './jobs-landing-extern/jobs-landing-extern.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { ImprintComponent } from './legal/imprint/imprint.component';
     AgbComponent,
     WiderrufComponent,
     CookieComponent,
-    ImprintComponent
+    ImprintComponent,
+    JobsLandingExternComponent
   ],
   imports: [
     BrowserModule,

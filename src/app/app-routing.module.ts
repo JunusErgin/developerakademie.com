@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { JobDetailComponent } from './job-detail/job-detail.component';
+import { JobsLandingExternComponent } from './jobs-landing-extern/jobs-landing-extern.component';
 import { JobsLandingComponent } from './jobs-landing/jobs-landing.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { LandingComponent } from './landing/landing.component';
@@ -17,37 +18,37 @@ const routes: Routes = [{
 }, {
   component: LandingComponent,
   path: ''
-}, /*{
-  component: JobsLandingComponent,
+}, {
+  component: JobsLandingExternComponent,
   path: 'karriere'
-},*/ {
+}, {
   component: DatenschutzComponent,
   path: 'data-protection'
 }, {
   component: DatenschutzComponent,
   path: 'datenschutz.html'
-},{
+}, {
   component: AgbComponent,
   path: 'agb'
-},{
+}, {
   component: AgbComponent,
   path: 'agb.html'
-},{
+}, {
   component: WiderrufComponent,
   path: 'widerruf'
-},{
+}, {
   component: WiderrufComponent,
   path: 'widerruf.html'
 }, {
   component: UnserTeamComponent,
   path: 'unser-team'
-},{
+}, {
   component: CookieComponent,
   path: 'cookie'
-},{
+}, {
   component: ImprintComponent,
   path: 'imprint'
-},{
+}, {
   component: ImprintComponent,
   path: 'impressum.html'
 }, {
