@@ -29,6 +29,7 @@ import { WiderrufComponent } from './legal/widerruf/widerruf.component';
 import { CookieComponent } from './legal/cookie/cookie.component';
 import { ImprintComponent } from './legal/imprint/imprint.component';
 import { JobsLandingExternComponent } from './jobs-landing-extern/jobs-landing-extern.component';
+import { HtmlKursComponent } from './html-kurs/html-kurs.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { JobsLandingExternComponent } from './jobs-landing-extern/jobs-landing-e
     WiderrufComponent,
     CookieComponent,
     ImprintComponent,
-    JobsLandingExternComponent
+    JobsLandingExternComponent,
+    HtmlKursComponent
   ],
   imports: [
     BrowserModule,

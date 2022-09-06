@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { HtmlKursComponent } from './html-kurs/html-kurs.component';
 import { JobDetailComponent } from './job-detail/job-detail.component';
 import { JobsLandingExternComponent } from './jobs-landing-extern/jobs-landing-extern.component';
 import { JobsLandingComponent } from './jobs-landing/jobs-landing.component';
@@ -27,6 +28,9 @@ const routes: Routes = [{
 }, {
   component: DatenschutzComponent,
   path: 'datenschutz.html'
+}, {
+  component: HtmlKursComponent,
+  path: 'html-kurs'
 }, {
   component: AgbComponent,
   path: 'agb'

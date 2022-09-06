@@ -9,7 +9,7 @@ import { NavigationEnd, Router } from '@angular/router';
 export class AppComponent {
   title = 'karriere';
 
-  constructor(private router: Router) { }
+  constructor(public router: Router) { }
 
   ngOnInit() {
     this.router.events.subscribe((evt) => {

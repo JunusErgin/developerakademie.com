@@ -1,0 +1,43 @@
+:host {
+    padding-top: 200px;
+    display: flex;
+    min-height: 60vh;
+    background-color: #E6E6E6;
+    background-image: url("./../../assets/img/blue_frame.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 800px) {
+        padding-top: 60px;
+    }
+}
+
+
+
+
+.card {
+    background-color: white;
+    padding: 8px;
+    max-width: 1400px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    color: rgba(0, 0, 0, .87);
+    border-radius: 4px;
+    box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+    flex-direction: column;
+    @media (max-width: 800px) {
+        width: 100%;
+    }
+    iframe {
+        height: calc(5*9vh);
+        width: calc(5*16vh);
+        max-width: 100%;
+        margin-bottom: 0.67em;;
+        box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+    }
+}
