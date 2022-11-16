@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
@@ -45,7 +44,6 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-=======
 # These are some examples of commonly ignored file patterns.
 # You should customize this list as applicable to your project.
 # Learn more about .gitignore:
@@ -96,4 +94,5 @@ Thumbs.db
 *.mov
 *.wmv
 
->>>>>>> 93b8c510ef0733b0a6d6c2c7d12c9332c60ccc04
+# Angular 
+.angular/
